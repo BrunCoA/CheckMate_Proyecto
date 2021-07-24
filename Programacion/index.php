@@ -1,8 +1,8 @@
 <html>
 
     <body style="background-color:DodgerBlue;">
-    
-        <a href="/CheckMate_Proyecto/Programacion/Frontend/Alumno">Aplicación alumno</a>
+
+        <link rel="AppAlumno" href="/CheckMate_Proyecto/Programacion/Frontend/Alumno">
     
     </body>
 
