@@ -6,6 +6,15 @@
     </head>	 
  	<BODY>	 
          <h2>Agendas</h2>
-         <h2> <a href="AppDocente.php">Volver a la Aplicacion</h2><br></a>
+         <?php      
+         if(isset($_POST['agregaragenda'])){
+          $horario=$_POST['horario'];
+          $asignatura=$_POST['asignatura'];
+          }
+         ?>
+         <h2><?php echo "Horarios: $horario";?></h2><br>
+         <h2><?php echo "Asignatura: $asignatura";?></h2><br>
+         <h2> <a href="AppDocente.php">Volver a la Aplicacion Docente</h2><br></a>
+         <h2> <a href="AppAlumno.php">Volver a la Aplicacion Alumno</h2><br></a>
  	</BODY>	 
 </HTML>	 	 

@@ -8,5 +8,15 @@
  	<body>	 
          <h2>Consultas contestadas</h2>
         <h2> <a href="AppAlumno.php">Volver a la Aplicacion</h2><br></a>
+        <?php 
+        if ( isset( $_POST['enviarrespuesta'] ) ) {
+    $temaconsulta=$_POST['temaconsulta'];
+    $asignatura=$_POST['asignatura']; 
+    $respuestadocente=$_POST['respuestadocente'];
+    }
+    ?>
+    <h2><?php echo "Tema: $temaconsulta";?></h2><br>
+    <h2><?php echo "Asignatura: $asignatura";?></h2><br>
+    <h2><?php echo "Respuesta: $respuestadocente";?></h2><br>
     </body>	 
 </HTML>	 	 

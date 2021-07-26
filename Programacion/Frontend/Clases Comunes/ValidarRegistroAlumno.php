@@ -1,18 +1,13 @@
 <?php
 //Variables provisorias
 $cialumno="11111111";
-$error;
-include('Variables.php');
-if ( isset( $_POST['submit'] ) ) {
+if ( isset( $_POST['registrar'] ) ) {
     $cedulaalumnoregistro=$_POST['cedulaalumnoregistro'];
     $passalumnoregistro=$_POST['passalumnoregistro']; 
     $passveralumnoregistro=$_POST['passveralumnoregistro'];
 }
 if ($passalumnoregistro==$passveralumnoregistro and $cedulaalumnoregistro==$cialumno) {
-    $error="OK";
-    header ("location:InterfaceLoginAlumno.php?error-$error&$cedulaalumnoregistro");
-    echo "Accedió";
+    header ("location:AppAlumno.php");
 }else{
-    $error="Incorrecto";
-    header ("location:InterfaceRegistroAlumno.php?error-$error");
+    header ("location:InterfaceRegistroAlumno.php");
 }

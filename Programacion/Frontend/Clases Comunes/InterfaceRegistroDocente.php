@@ -6,7 +6,7 @@
     </head>	 
  	<BODY>	 
          <h2>Registro de Docente</h2>
- 	 	<form action="Variables.php" method="post"> 
+ 	 	<form action="ValidarRegistroDocente.php" method="post"> 
               <input type="text" placeholder="Cedula" name="ceduladocenteregistro" >
               <input type="text" placeholder="Nombre Nombre" name="nombredocenteregistro" >
               <input type="text" placeholder="Apellido Apellido" name="apellidodocenteregistro" >

@@ -5,11 +5,12 @@
     <link rel="stylesheet" href="estilos.css">
  	 	<TITLE>Aplicacion de alumno</TITLE>
 </head>	 
- 	<body>	 
+ 	<body><?php
+    ?>	 
          <h2>Aplicacion de alumno</h2>
          <h2> <a href="PerfilAlumno.php">Ver perfil</h2><br></a>
          <h2><a href="ConsultaAlumnoDocente.php">Realizar Consulta Asincronica</h2><br></a>
          <h2> <a href="VerConsultasAlumno.php">Ver consultas contestadas</h2></a>
-         <h2> <a href="VerAgendaAlumno.php">Ver Agendas</h2></a>
+         <h2> <a href="VerAgendaDocente.php">Ver Agendas</h2></a>
     </body>	 
 </HTML>	 	 
