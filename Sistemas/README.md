@@ -2,6 +2,7 @@
 
 Como root instalamos: 
 >yum -y install epel-release
+>
 >yum -y install ansible
 
 Como usuario admin de ansible (no root)
