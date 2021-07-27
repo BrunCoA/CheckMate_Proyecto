@@ -1,0 +1,49 @@
+#version=DEVEL
+# System authorization information
+auth --enableshadow --passalgo=sha512
+# Use CDROM installation media
+cdrom
+# Use graphical install
+graphical
+# Run the Setup Agent on first boot
+firstboot --enable
+ignoredisk --only-use=sda
+# Keyboard layouts
+keyboard --vckeymap=latam --xlayouts='latam'
+# System language
+lang es_UY.UTF-8
+
+# Network information
+network  --bootproto=dhcp --device=eth0 --ipv6=auto --activate
+network  --hostname=checkmate.local
+
+# Root password
+rootpw --iscrypted $6$hcq96lbI/nCkvFJy$JGAKdAH9E5FrLZkjOUiBXqsbzqUEhyWj5crESVFvWoS6VjM0xHWC2Pomx9LItGYmcvrIXL5VL5U5G7lznxxMY0
+# System services
+services --enabled="chronyd"
+# System timezone
+timezone America/Montevideo --isUtc
+user --groups=wheel --name=admin --password=$6$5o7gTdi7wq5IbNmn$wqcO51al/oQdvmYuNEA2JnpzvDRtb8lQfYzrgNbswZvhM0QZWLJqYsq4VFlZwk6rmwK.KIhrOazJieMfrlCRB1 --iscrypted --gecos="Admin"
+# System bootloader configuration
+bootloader --append=" crashkernel=auto" --location=mbr --boot-drive=sda
+autopart --type=lvm
+# Partition clearing information
+clearpart --none --initlabel
+
+%packages
+@^minimal
+@core
+chrony
+kexec-tools
+
+%end
+
+%addon com_redhat_kdump --enable --reserve-mb='auto'
+
+%end
+
+%anaconda
+pwpolicy root --minlen=6 --minquality=1 --notstrict --nochanges --notempty
+pwpolicy user --minlen=6 --minquality=1 --notstrict --nochanges --emptyok
+pwpolicy luks --minlen=6 --minquality=1 --notstrict --nochanges --notempty
+%end
