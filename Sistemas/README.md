@@ -7,7 +7,9 @@ Como root instalamos:
 
 Como usuario admin de ansible (no root)
 Vamos a utilizar como servidor de ejemplo "hostProyecto.local"
-> ssh-keygen; ssh-copy-id hostProyecto.local
+> ssh-keygen
+> 
+> ssh-copy-id hostProyecto.local
 > 
 > cat hostProyecto.local > /home/admin/hosts
 > 
