@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">	 	 
  	<head>
@@ -6,7 +7,7 @@
     </head>	 
  	<BODY>	 
          <h2>Registro de Alumno</h2>
- 	 	<form action="ValidarRegistroAlumno.php" method="post"> 
+ 	 	<form action="registraralumno.php" method="post"> 
               <input type="text" placeholder="Cedula" name="cedulaalumnoregistro" >
               <input type="text" placeholder="Nombre Nombre" name="nombrealumnoregistro" >
               <input type="text" placeholder="Apellido Apellido" name="apellidoalumnoregistro" >
