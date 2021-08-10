@@ -1,9 +1,16 @@
 <?php
+include 'conexion.php';
 $ceduladocentelogin=$_POST['ceduladocentelogin'];
 $passdocentelogin=$_POST['passdocentelogin'];
-if($ceduladocenteregistro=$ceduladocentelogin and $passdocentelogin=$passdocenteregistro){
-    header ("AppDocente.php");
+$cons = "SELECT * FROM usuario WHERE pass = '$passdocentelogin' and ci = '$ceduladocentelogin'";
+$resultado = mysqli_query($conexion, $cons);
+$verificar = mysqli_num_rows($resultado);
+if($verificar > 0){
+    header("location:AppDocente.php");
 }else{
-    echo "Fallo de autenticación compruebe que los datos ingresados son correctos";
+    echo '<script>
+    alert("Los datos ingresados no coinciden");
+    window.history.go(-1);
+    </script>';
 }
 ?>

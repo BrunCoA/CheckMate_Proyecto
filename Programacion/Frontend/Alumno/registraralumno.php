@@ -1,11 +1,11 @@
 <?php
 include 'conexion.php';
-@$ci = $_POST [cedulaalumnoregistro];
-@$nombre = $_POST [nombrealumnoregistro];
-@$apellido = $_POST [apellidoalumnoregistro];
-@$grupo = $_POST [grupoalumnoregistro];
-@$pass = $_POST [passalumnoregistro];
-@$verpass = $_POST [passveralumnoregistro];
+@$ci = $_POST ['cedulaalumnoregistro'];
+@$nombre = $_POST ['nombrealumnoregistro'];
+@$apellido = $_POST ['apellidoalumnoregistro'];
+@$grupo = $_POST ['grupoalumnoregistro'];
+@$pass = $_POST ['passalumnoregistro'];
+@$verpass = $_POST ['passveralumnoregistro'];
 $insertar = "INSERT INTO usuario(ci, nom, ape, pass) VALUES ('$ci','$nombre','$apellido','$pass')";
 
 if (strlen($ci) != 8){
