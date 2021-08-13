@@ -1,2 +1,2 @@
 <?php
-$conexion = mysqli_connect ("localhost", "root", "", "escuelita");
+$conexion = mysqli_connect ("localhost", "root", "", "bd_escuela");

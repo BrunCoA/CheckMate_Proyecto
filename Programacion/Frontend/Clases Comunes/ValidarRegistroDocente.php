@@ -1,16 +1,14 @@
 <?php
 include 'conexion.php';
-@$ci = $_POST ['ceduladocenteregistro'];
-@$nombre = $_POST ['nombredocenteregistro'];
-@$apellido = $_POST ['apellidodocenteregistro'];
-@$materia = $_POST ['materiadocenteregistro'];
-@$grupo = $_POST ['grupodocenteregistro'];
-@$pass = $_POST ['passdocenteregistro'];
-@$verpass = $_POST ['passverdocenteregistro'];
-@$foto = $_FILES['foto'];
-$insertar = "INSERT INTO usuario(ci, nombre, apellido, pass, foto) VALUES ('$ci','$nombre','$apellido','$pass','$foto')";
-$insertar2 = "INSERT INTO usuario_docente(ci, materia) VALUES ('$ci','$materia')";
-
+@$ci = $_POST [ceduladocenteregistro];
+@$nombre = $_POST [nombredocenteregistro];
+@$apellido = $_POST [apellidodocenteregistro];
+@$materia = $_POST [materiadocenteregistro];
+@$grupo = $_POST [grupodocenteregistro];
+@$pass = $_POST [passdocenteregistro];
+@$verpass = $_POST [passverdocenteregistro];
+@$foto = $_FILES[foto];
+$insertar = "INSERT INTO usuario(ci, nom, ape, materia, pass, foto) VALUES ('$ci','$nombre','$apellido','$pass','$foto')";
 
 if (strlen($ci) != 8){
     echo '<script>
@@ -39,12 +37,7 @@ $resultado = mysqli_query($conexion, $insertar);
 if (!$resultado){
     echo 'error al registrarse';
 }else{
-    header("location: InterfaceLoginDocente.php");
-}
-$resultado2 = mysqli_query($conexion, $insertar2);
-if (!$resultado2){
-    echo 'error al registrarse';
-}else{
-    header("location: InterfaceLoginDocente.php");
+    header("location: InterfaceLoginAlumno.php");
 }
 mysqli_close($conexion);
+?>
