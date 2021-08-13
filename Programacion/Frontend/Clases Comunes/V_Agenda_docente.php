@@ -7,8 +7,8 @@
 </head>	 
  	<body>	 
          <h2>Agenda</h2>
-         <h2> <a href="AgregarAgenda.php">Agregar una agenda</h2></a>
-         <h2> <a href="VerAgendaDocente.php">Ver agendas</h2></a>
-         <h2> <a href="AppDocente.php">Volver a la Aplicacion</h2></a>
+         <h2> <a href="V_AgregarAgenda.php">Agregar una agenda</h2></a>
+         <h2> <a href="V_VerAgenda_docente.php">Ver agendas</h2></a>
+         <h2> <a href="V_App_docente.php">Volver a la Aplicacion</h2></a>
     </body>	 
 </HTML>	 	 

@@ -7,7 +7,7 @@
 </head>	 
  	<body>	 
          <h2>Consultas contestadas</h2>
-        <h2> <a href="AppAlumno.php">Volver a la Aplicacion</h2><br></a>
+        <h2> <a href="V_App_alumno.php">Volver a la Aplicacion</h2><br></a>
         <?php 
         if ( isset( $_POST['enviarrespuesta'] ) ) {
     $temaconsulta=$_POST['temaconsulta'];

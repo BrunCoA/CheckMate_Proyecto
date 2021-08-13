@@ -6,7 +6,7 @@
     </head>	 
  	<BODY>	 
          <h2>Ingreso de Docente</h2>
- 	 	<form action="ValidarLoginDocente.php" method="post">
+ 	 	<form action="L_Login_docente.php" method="post">
               <input type="text" placeholder="Cedula" name="ceduladocentelogin" >
               <input type="password" placeholder="Contraseña" name="passdocentelogin" >
               <input type="submit" value="Ingresar" style="margin: 3%;"> 

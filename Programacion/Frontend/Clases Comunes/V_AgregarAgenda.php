@@ -7,7 +7,7 @@
 </head>	 
  	<body>	 
          <h2>Agenda</h2>
-    <form action="VerAgendaDocente.php" method="post">
+    <form action="V_VerAgenda_docente.php" method="post">
          <div class="form-group">
       <br>
     <label for="asignatura">¿De que asignatura es esta agenda?</label>
@@ -25,6 +25,6 @@
     <input type="submit" value="Agregar Agenda" name="agregaragenda" style="margin: 3%;"> 
   </div>
 </form>
-<h2><a href="AppDocente.php">Cancelar</h2><br></a>
+<h2><a href="V_App_docente.php">Cancelar</h2><br></a>
     </body>	 
 </HTML>	 	 

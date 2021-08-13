@@ -15,6 +15,6 @@ session_start();
          <h2><a href="V_Consulta_alumnodocente.php">Realizar Consulta Asincronica</h2><br></a>
          <h2> <a href="V_VerConsultas_alumno.php">Ver consultas contestadas</h2></a>
          <h2> <a href="V_VerAgenda_docente.php">Ver Agendas</h2></a>
-         <h2> <a href="L_Logout_alumno.php">Salir</h2></a>
+         <h2> <a href="L_Logout.php">Salir</h2></a>
     </body>	 
 </HTML>	 	 

@@ -7,6 +7,6 @@
 </head>	 
  	<body>	 
          <h2>Consultas contestadas</h2>
-        <h2> <a href="AppDocente.php">Volver a la Aplicacion</h2><br></a>
+        <h2> <a href="V_App_docente.php">Volver a la Aplicacion</h2><br></a>
     </body>	 
 </HTML>	 	 
