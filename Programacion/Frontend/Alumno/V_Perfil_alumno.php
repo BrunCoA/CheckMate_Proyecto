@@ -25,8 +25,8 @@ session_start();
 		 <?php
 		 }
 		 ?>
-		 	<h2> <a href="ModificarPerfilAlumno.php">Modificar perfil</h2><br></a>
-		<h2> <a href="AppAlumno.php">Salir</h2></a>
+		 	<h2> <a href="V_ModificarPerfil_alumno.php">Modificar perfil</h2><br></a>
+		<h2> <a href="V_App_alumno.php">Salir</h2></a>
 	
  	</BODY>	 
 </HTML>	 	 

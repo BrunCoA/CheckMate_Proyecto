@@ -51,6 +51,6 @@ $resultado = mysqli_query($conexion, $insertar);
 if (!$resultado){
     echo 'error al registrarse';
 }else{
-    header("location: InterfaceLoginAlumno.php");
+    header("location: V_Login_alumno.php");
 }
 mysqli_close($conexion);

@@ -1,5 +1,5 @@
 <?php
 session_start();
 session_destroy();
-header("Location: paginaprincipal.php");
+header("Location: V_PaginaPrincipal.php");
 ?>

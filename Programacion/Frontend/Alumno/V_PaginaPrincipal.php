@@ -8,8 +8,8 @@
  	<body><?php
     ?>	 
          <h2>CheckMate</h2>
-         <h2> <a href="InterfaceLoginAlumno.php">Entrar como alumno</h2><br></a>
-         <h2><a href="InterfaceLoginDocente.php">Entrar como docente</h2><br></a>
-         <h2> <a href="InterfaceLoginAdministrador.php">Entrar como administrador</h2><br></a>
+         <h2> <a href="V_Login_alumno.php">Entrar como alumno</h2><br></a>
+         <h2><a href="V_Login_docente.php">Entrar como docente</h2><br></a>
+         <h2> <a href="V_Login_administrador.php">Entrar como administrador</h2><br></a>
     </body>	 
 </HTML>	 	 

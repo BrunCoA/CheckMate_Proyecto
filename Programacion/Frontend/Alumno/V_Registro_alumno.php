@@ -6,7 +6,7 @@
     </head>	 
  	<BODY>	 
          <h2>Registro de Alumno</h2>
- 	 	<form action="registraralumno.php" method="post" enctype="multipart/form-data"> 
+ 	 	<form action="L_Registro_alumno.php" method="post" enctype="multipart/form-data"> 
               <input type="text" placeholder="Cedula" name="cedulaalumnoregistro" >
               <input type="text" placeholder="Nombre Nombre" name="nombrealumnoregistro" >
               <input type="text" placeholder="Apellido Apellido" name="apellidoalumnoregistro" >

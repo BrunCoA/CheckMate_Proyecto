@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="estilos.css">
-<form action="ConsultaDocenteAlumno.php" method="post">
+<form action="V_Consulta_docentealumno.php" method="post">
 <div class="form-group">
     <label for="nombrealumno">Nombre</label>
     <input type="text" class="form-control" name="nombrealumno" placeholder="Franco">
@@ -27,4 +27,4 @@
     <input type="submit" value="Enviar Consulta" name="enviarconsulta" style="margin: 3%;"> 
   </div>
 </form>
-<h2><a href="AppAlumno.php">Cancelar consulta</h2><br></a>
+<h2><a href="V_App_alumno.php">Cancelar consulta</h2><br></a>

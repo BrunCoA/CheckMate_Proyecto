@@ -11,7 +11,7 @@ if ( isset( $_POST['enviarconsulta'] ) ) {
 <h2><?php echo "Tema: $temaconsultarecibidadocente";?></h2><br>
 <h2><?php echo "Asignatura: $asignaturaconsultarecibidadocente";?></h2><br>
 <h2><?php echo "Pregunta: $preguntarecibidaconsultadocente";?></h2><br>
-<form action="VerConsultasAlumno.php" method="post">
+<form action="V_VerConsultas_alumno.php" method="post">
   <br>
 <div class="form-group">
     <label for="tituloconsulta">Tema</label>
@@ -35,4 +35,4 @@ if ( isset( $_POST['enviarconsulta'] ) ) {
     <input type="submit" value="Enviar Respuesta" name="enviarrespuesta" style="margin: 3%;"> 
   </div>
 </form>
-<h2><a href="AppDocente.php">Volver a la aplicacion</h2><br></a>
+<h2><a href="V_App_docente.php">Volver a la aplicacion</h2><br></a>
