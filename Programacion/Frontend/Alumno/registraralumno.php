@@ -1,12 +1,12 @@
 <?php
 include 'conexion.php';
 $imagen='';
-@$ci = $_POST [cedulaalumnoregistro];
-@$nombre = $_POST [nombrealumnoregistro];
-@$apellido = $_POST [apellidoalumnoregistro];
-@$grupo = $_POST [grupoalumnoregistro];
-@$pass = $_POST [passalumnoregistro];
-@$verpass = $_POST [passveralumnoregistro];
+@$ci = $_POST ['cedulaalumnoregistro'];
+@$nombre = $_POST ['nombrealumnoregistro'];
+@$apellido = $_POST ['apellidoalumnoregistro'];
+@$grupo = $_POST ['grupoalumnoregistro'];
+@$pass = $_POST ['passalumnoregistro'];
+@$verpass = $_POST ['passveralumnoregistro'];
 if(isset($_FILES["foto"])){
 $foto = $_FILES["foto"];
 $nomfoto = $foto["name"];
