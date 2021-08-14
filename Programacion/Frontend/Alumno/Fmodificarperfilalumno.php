@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="estilos.css">
 <h2>Modificar perfil</h2> <img src="">"
-<form action="V_Perfil_alumno.php" method="post">
+<form action="Fperfilalumno.php" method="post">
     <label for="cedula">Cedula</label> 
     <input type="text" placeholder="Cedula" name="cedulaalumnoperfil" >
     <label for="nombre">Nombre</label> 
@@ -17,4 +17,4 @@
     <input type="file" class="form-control-file" id="exampleFormControlFile1" name="fotoperfilusuario">
     <input type="submit" value="Aplicar cambios" name="aplicarcambiosalumno" style="margin: 3%;">
 </form>
-<h2><a href="V_Perfil_alumno.php">Volver al perfil</h2><br></a>
+<h2><a href="Fperfilalumno.php">Volver al perfil</h2><br></a>

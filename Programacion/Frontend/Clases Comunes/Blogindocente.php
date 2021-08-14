@@ -8,7 +8,7 @@ $resultado = mysqli_query($conexion, $cons);
 $verificar = mysqli_num_rows($resultado);
 if($verificar > 0){
     $_SESSION['usuario'] = $ceduladocentelogin;
-    header("location:V_App_docente.php");
+    header("location:Fappdocente.php");
 }else{
     echo '<script>
     alert("Los datos ingresados no coinciden");

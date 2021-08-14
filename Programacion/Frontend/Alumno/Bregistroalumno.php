@@ -1,12 +1,12 @@
 <?php
 include 'conexion.php';
 $imagen='';
-@$ci = $_POST ['ceduladocenteregistro'];
-@$nombre = $_POST ['nombredocenteregistro'];
-@$apellido = $_POST ['apellidodocenteregistro'];
-@$grupo = $_POST ['grupodocenteregistro'];
-@$pass = $_POST ['passdocenteregistro'];
-@$verpass = $_POST ['passverdocenteregistro'];
+@$ci = $_POST ['cedulaalumnoregistro'];
+@$nombre = $_POST ['nombrealumnoregistro'];
+@$apellido = $_POST ['apellidoalumnoregistro'];
+@$grupo = $_POST ['grupoalumnoregistro'];
+@$pass = $_POST ['passalumnoregistro'];
+@$verpass = $_POST ['passveralumnoregistro'];
 if(isset($_FILES["foto"])){
 $foto = $_FILES["foto"];
 $nomfoto = $foto["name"];
@@ -51,6 +51,6 @@ $resultado = mysqli_query($conexion, $insertar);
 if (!$resultado){
     echo 'error al registrarse';
 }else{
-    header("location: V_Login_docente.php");
+    header("location: Floginalumno.php");
 }
 mysqli_close($conexion);

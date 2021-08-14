@@ -1,27 +1,28 @@
 <?php
 include 'conexion.php';
 $imagen='';
-@$ci = $_POST ['cedulaalumnoregistro'];
-@$nombre = $_POST ['nombrealumnoregistro'];
-@$apellido = $_POST ['apellidoalumnoregistro'];
-@$grupo = $_POST ['grupoalumnoregistro'];
-@$pass = $_POST ['passalumnoregistro'];
-@$verpass = $_POST ['passveralumnoregistro'];
+@$ci = $_POST ['ceduladocenteregistro'];
+@$nombre = $_POST ['nombredocenteregistro'];
+@$apellido = $_POST ['apellidodocenteregistro'];
+@$grupo = $_POST ['grupodocenteregistro'];
+@$pass = $_POST ['passdocenteregistro'];
+@$verpass = $_POST ['passverdocenteregistro'];
 if(isset($_FILES["foto"])){
 $foto = $_FILES["foto"];
 $nomfoto = $foto["name"];
 $tipo = $foto["type"];
 $ruta_prov = $foto["tmp_name"];
-$ruta = "images/";
+$ruta = "../Alumno/images/";
 if($tipo != 'image/jpg' && $tipo != 'image/jpeg' && $tipo != 'image/png' && $tipo != 'image/gif'){
     echo '<script>
     alert("El archivo ingresado no es una imagen");
     window.history.go(-1);
     </script>';
+    exit;
 }else{
     $directorio = $ruta.$nomfoto;
     move_uploaded_file($ruta_prov, $directorio);
-    $imagen="images/".$nomfoto;
+    $imagen="../Alumno/images/".$nomfoto;
 }
 }
 if (strlen($ci) != 8){
@@ -34,6 +35,13 @@ if (strlen($ci) != 8){
 if ($pass != $verpass){
     echo '<script>
     alert("La contraseñas no coinciden");
+    window.history.go(-1);
+    </script>';
+    exit;
+}
+if (strlen($pass) == null){
+    echo '<script>
+    alert("Ingrese una contraseña");
     window.history.go(-1);
     </script>';
     exit;
@@ -51,6 +59,6 @@ $resultado = mysqli_query($conexion, $insertar);
 if (!$resultado){
     echo 'error al registrarse';
 }else{
-    header("location: V_Login_alumno.php");
+    header("location: Flogindocente.php");
 }
 mysqli_close($conexion);
