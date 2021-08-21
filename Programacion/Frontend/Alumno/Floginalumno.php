@@ -6,7 +6,7 @@
     </head>	 
  	<BODY>	 
          <h2>Ingreso de Alumno</h2>
- 	 	<form action="Floginalumno.php" method="post">
+ 	 	<form action="Bloginalumno.php" method="post">
               <input type="text" placeholder="Cedula" name="cedulaalumnologin" >
               <input type="password" placeholder="Contraseña" name="passalumnologin" >
               <input type="submit" value="Ingresar" style="margin: 3%;"> 
