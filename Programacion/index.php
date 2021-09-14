@@ -4,7 +4,7 @@
 
             <body style="background-color:DodgerBlue;">
         
-            <a href="/CheckMate_Proyecto/Programacion/Frontend/Clases Comunes/InterfaceRegistroAlumno.php">Aplicación alumno</a>
+            <a href="/CheckMate_Proyecto/Programacion/Frontend/Alumno/Fpaginaprincipal.php">Aplicación</a>
         
             </body>
 

@@ -6,7 +6,6 @@
     </head>	 
  	<BODY>	 
          <h2>Ingreso de Alumno</h2>
-         
  	 	<form action="Bloginalumno.php" method="post">
               <input type="text" placeholder="Cedula" name="cedulaalumnologin" >
               <input type="password" placeholder="Contraseña" name="passalumnologin" >
