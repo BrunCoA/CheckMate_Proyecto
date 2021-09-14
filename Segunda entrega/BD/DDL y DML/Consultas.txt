@@ -1,0 +1,6 @@
+1) Para cada alumno mostrar su nombre y cuantas consultas asincronicas tuvo.
+
+SELECT u.nom, count(num_cons)
+FROM consulta c, usuario u, alumno a
+WHERE c.ci=u.ci AND u.ci=a.ci 
+GROUP BY (nom)
