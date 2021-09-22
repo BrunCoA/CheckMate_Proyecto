@@ -12,13 +12,13 @@ close.addEventListener('click', () =>{
 })
 
 const openregalumno=document.getElementById('openregalumno');
-const formregalumno=document.getElementById('formregalumno');
+const ctnregalumno=document.getElementById('ctn-reg-alumno');
 
 openregalumno.addEventListener('click',() =>{
-    formregalumno.classList.add('showregalumno')
+    ctnregalumno.classList.add('showregalumno')
     alert('hola');
 })
 
 close.addEventListener('click', () =>{
-    formregalumno.classList.remove('showregalumno');
+    ctnregalumno.classList.remove('showregalumno');
 })
