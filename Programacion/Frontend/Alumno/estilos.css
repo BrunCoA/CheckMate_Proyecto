@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+}
+
+div {
+    overflow-y: visible;
+}
+
+body {
+    background-image: url(background-wallpaper-with-polygons-in-gradient-colors-vector.jpg);
+    overflow-y: visible;
+}
+
+.container-all {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    display: flex;
+}
+
+.ctn-form {
+    margin-top: 50px;
+    width: 40%;
+    padding: 40px;
+    margin-left: 500px;
+    background-image: url(html-color-codes-color-tutorials-hero.jpg);
+}
+
+.ctn-text {
+    margin-left: 300px;
+    margin-top: 167px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #F66B05;
+}
+
+label {
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 250;
+    color: #F66B05;
+}
+
+input {
+    margin: auto;
+    display: block;
+    color: white;
+    text-align: center;
+    border: 0px;
+}
+
+.password {
+    margin-bottom: 20%;
+    color: white;
+    text-align: center;
+    border: 0px;
+}
+
+.botonesuwu button {
+    margin-bottom: 3%;
+    width: 45%;
+    color: #F66B05;
+    height: 40px;
+    border: 0px;
+    background-image: url(html-color-codes-color-tutorials-hero.jpg);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.ingresar input {
+    margin: auto;
+    width: 100%;
+    color: #F66B05;
+    height: 50px;
+    border: 0px;
+    background-image: url(html-color-codes-color-tutorials-hero.jpg);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.submitalumno input {
+    width: 50%;
+    margin-top: 20px;
+    color: #F66B05;
+    height: 50px;
+    border: 0px;
+    background-image: url(html-color-codes-color-tutorials-hero.jpg);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.submitdocente input {
+    margin-top: 20px;
+    color: #F66B05;
+    height: 50px;
+    border: 0px;
+    background-image: url(html-color-codes-color-tutorials-hero.jpg);
+    font-weight: 300;
+    cursor: pointer;
+    width: 50%;
+}
+
+.text-footer {
+    color: hotpink;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.modal-container {
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    background-image: url(legion-abstract-8k-ipad-wallpaper-ilikewallpaper_com_2732x2732.jpg);
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    overflow-y: auto
+}
+
+.formalumno {
+    margin-right: 10px;
+}
+
+.formdocente {
+    margin-left: 10px;
+}
+
+.formregistro {
+    display: flex;
+    margin: auto;
+}
+
+.regalumnotitulo h2 {
+    font-size: 15px;
+    margin-left: 28px;
+    margin-bottom: 10px;
+    color: #CA0E86;
+}
+
+.regdocentetitulo h2 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #CA0E86;
+}
+
+.close button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #CA0E86;
+}
+
+.ctn-reg-alumno {
+    display: block;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+    position: fixed;
+}
+
+.ci input {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.nom input {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.ape input {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.nicknamealumno input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.grupo input {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.pass input {
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.verpass input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.selectalumno h2 {
+    font-size: 13px;
+    color: #CA0E86;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.selectfoto input {
+    margin: auto;
+}
+
+.cidocente input {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.nomdocente input {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.apedocente input {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.nicknamedocente input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.grupodocente input {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.passdocente input {
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.verpassdocente input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 25px;
+    padding: 12px 20px;
+    border: 3px solid #F66B05;
+    border-radius: 4px;
+    color: black;
+}
+
+.selectdocente h2 {
+    font-size: 13px;
+    color: #CA0E86;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.selectfotodocente input {
+    margin: auto;
+}
+
+.modal {
+    margin: auto;
+    width: 1000px;
+    text-align: center;
+    height: 80%;
+}
+
+.pregunta label {
+    color: #CA0E86;
+    margin-bottom: 2%;
+}
+
+.modal p {
+    opacity: 0.7;
+    font-size: 14px;
+    color: #141515;
+    margin-bottom: 5%;
+}
+
+button {
+    background: none;
+    border: 0px;
+    color: #F66B05;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .ctn-text {
+        display: none;
+    }
+    .ctn-form {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ctn-form {
+        width: 75%
+    }
+}
+
+@media (max-width: 480px) {
+    .ctn-form {
+        width: 90%
+    }
+}

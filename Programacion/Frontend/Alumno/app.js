@@ -10,15 +10,3 @@ open.addEventListener('click', () =>{
 close.addEventListener('click', () =>{
     modal_container.classList.remove('show');
 })
-
-const openregalumno=document.getElementById('openregalumno');
-const ctnregalumno=document.getElementById('ctn-reg-alumno');
-
-openregalumno.addEventListener('click',() =>{
-    ctnregalumno.classList.add('showregalumno')
-    alert('hola');
-})
-
-close.addEventListener('click', () =>{
-    ctnregalumno.classList.remove('showregalumno');
-})
