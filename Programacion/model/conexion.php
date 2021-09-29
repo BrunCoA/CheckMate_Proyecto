@@ -23,6 +23,7 @@ class Conexion extends PDO
          // exit;
       }
    }
+<<<<<<< HEAD
 
    // Otra opciòn para devolver la conecciòn
    public static function getConexion($user_db, $pass_db)
@@ -43,3 +44,6 @@ class Conexion extends PDO
       }
    }
 }
+=======
+}
+>>>>>>> 288c8dc913c8065e84d9830681de1814fbe63c1e
