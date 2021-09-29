@@ -22,11 +22,11 @@
         <div class="ctn-form">
             <h2 class="title">Iniciar Sesión</h2>
             <form action="">
-                <div class="nombredeusuario">
-                    <label for="">Nombre de usuario</label>
+                <div class="cideusuario">
+                    <label for="">CI de usuario</label>
                 </div>
-                <div class="nombreusuario">
-                    <input type="text">
+                <div class="ciusuario">
+                    <input type="text" name="cilogin">
                 </div>
                 <div class="contraseña">
                     <label for="">Contraseña</label>
@@ -51,7 +51,7 @@
                 <div class="ctn-reg" id="ctn-reg">
                     <div class="formregistro" id=formreg>
                         <div class="ctn-reg-alumno" id="ctn-reg-alumno">
-                            <form class="formalumno" action="Bregistroalumno.php" method="post" enctype="multipart/form-data">
+                            <form class="formalumno" action="../model/registro.php" method="post" enctype="multipart/form-data">
                                 <div class="regalumnotitulo" id="regalumnotitulo">
                                     <h2>Registro de alumno</h2>
                                 </div>
@@ -70,7 +70,7 @@
                             </form>
                         </div>
                         <div class="ctn-reg-docente">
-                            <form class="formdocente" action="Bregistrodocente.php" method="post" enctype="multipart/form-data">
+                            <form class="formdocente" action="../model/registro.php" method="post" enctype="multipart/form-data">
                                 <div class="regdocentetitulo">
                                     <h2>Registro de docente</h2>
                                 </div>

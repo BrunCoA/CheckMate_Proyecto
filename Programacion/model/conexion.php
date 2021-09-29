@@ -1,5 +1,5 @@
 <?php
-
+$conexion = mysqli_connect ("localhost", "root", "", "bd_escuela");
 class Conexion extends PDO
 {
    private const USER = "root";
@@ -19,31 +19,7 @@ class Conexion extends PDO
            
       } catch (PDOException $e) {
          throw new Exception('Falló la conexión con la DB: ' . $e->getMessage());
-         // echo 'Ha surgido un error y no se puede conectar a la base de datos. Detalle: ' . $e->getMessage();
-         // exit;
       }
    }
-<<<<<<< HEAD
-
-   // Otra opciòn para devolver la conecciòn
-   public static function getConexion($user_db, $pass_db)
-   {
-      $obj_conexion = null;
-      try {
-         if ($user_db) {
-            $obj_conexion = new PDO(self::DSN, $user_db, $pass_db);
-         } else {
-            $obj_conexion = new PDO(self::DSN, self::USER, self::PASS);
-         }
-
-         return  $obj_conexion;
-      } catch (PDOException $e) {
-         throw new Exception('Falló la conexión con la DB: ' . $e->getMessage());
-         // echo 'Ha surgido un error y no se puede conectar a la base de datos. Detalle: ' . $e->getMessage();
-         // exit;
-      }
    }
-}
-=======
-}
->>>>>>> 288c8dc913c8065e84d9830681de1814fbe63c1e
+
