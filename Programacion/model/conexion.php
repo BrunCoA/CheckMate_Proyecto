@@ -1,5 +1,17 @@
 <?php
-$conexion = mysqli_connect ("localhost", "root", "", "bd_escuela");
+
+try{
+
+   $base= new PDO('mysql:host=localhost; dbname=db_chatmate','root','');
+   echo 'Conexión realizada con éxito.';
+
+}catch(Exception $e){
+
+   die('Error: ' . $e->getMessage());
+
+}
+
+
 class Conexion extends PDO
 {
    private const USER = "root";
