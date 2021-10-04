@@ -5,13 +5,14 @@ USE db_chatmate;
 
 CREATE TABLE `usuario` (
   `ci` int(8) NOT NULL,
-  `nom` varchar(64) NOT NULL,
-  `ape` varchar(64) NOT NULL,
-  `activo` tinyint(1) NOT NULL,
+  `p_nom` varchar(64) NOT NULL,
+  `s_nom` varchar(64) NOT NULL,
+  `p_ape` varchar(64) NOT NULL,
+  `s_ape` varchar(64) NOT NULL,
+  `activo` tinyint(1) NOT NULL DEFAULT 0,
   `pass` varchar(64) NOT NULL,
-  `foto` varchar(255) NOT NULL,
-  `hora_conex` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `hora_des` timestamp NULL DEFAULT NULL,
+  `hora_conex` timestamp DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `hora_des` timestamp DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (ci)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -22,12 +23,14 @@ CREATE TABLE `administrador` (
 
 CREATE TABLE `docente` (
   `ci` int(8) NOT NULL,
+  `foto` varchar(255) NOT NULL,
   CONSTRAINT fk_docente_ci FOREIGN KEY (ci) REFERENCES usuario (ci)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `alumno` (
   `ci` int(8) NOT NULL,
   `apodo` varchar(25) NOT NULL,
+  `foto` varchar(255) NOT NULL,
   CONSTRAINT fk_alumno_ci FOREIGN KEY (ci) REFERENCES usuario (ci)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
