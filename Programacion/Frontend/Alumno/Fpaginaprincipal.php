@@ -21,18 +21,18 @@
         </div>
         <div class="ctn-form">
             <h2 class="title">Iniciar Sesión</h2>
-            <form action="">
+            <form action="Bloginalumno.php">
                 <div class="nombredeusuario">
-                    <label for="">Nombre de usuario</label>
+                    <label for="">Cedula</label>
                 </div>
-                <div class="nombreusuario">
-                    <input type="text">
+                <div class="cedulausuario">
+                    <input type="text" name="cedulaalumnologin" style="color: #141515;">
                 </div>
                 <div class="contraseña">
                     <label for="">Contraseña</label>
                 </div>
                 <div class="password">
-                    <input type="password" id="pass">
+                    <input type="password" name="passalumnologin" id="pass" style="color: #141515;">
                 </div>
                 <div class="ingresar">
                     <input type="submit" value="Ingresar">
