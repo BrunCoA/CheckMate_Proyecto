@@ -17,10 +17,12 @@
         <header>
             <div>
                 <div>
-                
+
                 </div>
                 <div>
-
+                    <a href="">
+                            <img src="mensaje.png" alt="Solicitudes">
+                    </a>
                 </div>
 
             </div>
