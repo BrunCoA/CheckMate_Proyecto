@@ -17,7 +17,7 @@
         <header>
             <div>
                 <div>
-
+                    <img src="chatmate_logo.png" alt="ChatMate">
                 </div>
                 <div>
                     <a href="">
