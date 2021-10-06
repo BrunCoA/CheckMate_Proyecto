@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+}
+body {
+    background-image: url(adminmain.svg);
+    background-size: 30%;
+}
+
+.nav {
+    width: 100%;
+}
+.nav1 {
+    width: 100px;
+    float: left;
+}
+.nav2 {   
+    width: 100px;
+    float: right;
+}

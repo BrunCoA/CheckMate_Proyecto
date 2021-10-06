@@ -390,3 +390,8 @@ button {
         width: 90%
     }
 }
+
+.container-all{
+    width: 100%;
+    height: 100%;
+}
