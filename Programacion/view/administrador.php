@@ -18,7 +18,10 @@
                 </div>
                 <div class="nav2">
                     <a href="">
-                    <img src="css/solicitud.svg" alt="Solicitud Alumno">
+                        <img src="css/perfil.svg" alt="Perfil">
+                    </a>
+                    <a href="">
+                        <img src="css/solicitud.svg" alt="Solicitud Alumno">
                     </a>
                 </div>
 

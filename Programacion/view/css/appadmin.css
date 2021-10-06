@@ -5,18 +5,27 @@
     text-decoration: none;
 }
 body {
-    background-image: url(adminmain.svg);
+    background-image: url("adminmain.svg");
     background-size: 30%;
+    min-height: 100%;
 }
-
+.container-all {
+    min-height: 100%;
+    min-width: 100%;
+}
 .nav {
+    background-color: midnightblue;
+    height: 25px;
     width: 100%;
 }
-.nav1 {
+.nav1 a {
+    margin-top: 3px;
+    margin-left: 15px;
     width: 100px;
     float: left;
+    padding: 3px;
 }
-.nav2 {   
-    width: 100px;
+.nav2 a {   
+    width: 50px;
     float: right;
 }
