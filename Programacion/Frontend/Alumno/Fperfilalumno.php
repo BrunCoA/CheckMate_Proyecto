@@ -3,30 +3,40 @@ include 'conexion.php';
 session_start();
 ?>
 <html>
-<html lang="es">	 	 
- 	<head>
-   <link rel="stylesheet" href="estilos.css">
- 	 	<TITLE>Perfil</TITLE>
-    </head>	 
- 	<BODY>	 
-         <h2>Perfil de alumno</h2>
-		 <?php
-		 $consulta = "SELECT * FROM usuario WHERE ci=$_SESSION[usuario]";
-		 $resultado = mysqli_query($conexion,$consulta);
-		 while ($listar=mysqli_fetch_array($resultado)){
-		 ?>
-		 <tr>
-			 <td>Foto de perfil<img src="<?php echo $listar['foto']?>"width="80px" height=auto></td>
-			 <td><?php echo $listar['ci']?></td>
-			 <td><?php echo $listar['nom']?></td>
-			 <td><?php echo $listar['ape']?></td>
-			 <td><?php echo $listar['apodo']?></td>
-		 </tr>
-		 <?php
-		 }
-		 ?>
-		 	<h2> <a href="Fmodificarperfilalumno.php">Modificar perfil</h2><br></a>
-		<h2> <a href="Fappalumno.php">Salir</h2></a>
-	
- 	</BODY>	 
+<html lang="es">
+
+<head>
+	<link rel="stylesheet" href="styles2.css">
+	<TITLE>Perfil</TITLE>
+</head>
+
+<BODY>
+	<div class="all">
+		<div class="listadatos">
+		<div class="titulo">
+			<h2>Perfil de alumno</h2>
+		</div>
+			<tr>
+				<div class="datos">
+					<td><img src="imagenperfil.png"></td>
+
+					<div class="ci">
+						<td>51800449</td>
+					</div>
+					<div class="nombre">
+						<td>Franco Joaquin</td>
+					</div>
+					<div class="apellido">
+						<td>Machado Rosales</td>
+					</div>
+			</tr>
+			<div class="botones">
+			<div><button onclick="location.href='Fmodificarperfilalumno.php'">Modificar perfil</button></div><div style="padding: 25px;"><button onclick="location.href='Fappalumno.php'">Volver</button></div>
+		</div>
+		</div>
+		
+	</div>
+	</div>
+</BODY>
+
 </HTML>

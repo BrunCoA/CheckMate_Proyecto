@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(abstract-13-4k.jpg);
+    background-size: 100%;
+}
+
+.ctn-form {
+    background-color: #12131B;
+    width: 450px;
+    height: 98%;
+    margin: auto;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    padding: 10px;
+}
+
+.cilabel {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.ciinput {
+    text-align: center;
+    padding: 10px;
+}
+
+.nomlabel {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.nominput {
+    text-align: center;
+    padding: 10px;
+}
+
+.grupolabel {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.grupoinput {
+    text-align: center;
+    padding: 10px;
+}
+
+.passlabel {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.passinput {
+    text-align: center;
+    padding: 10px;
+}
+
+.file input {
+    margin-top: 10px;
+    padding: 14px 16px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit input {
+    padding: 14px 16px;
+    background-color: #163C4F;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cancelar button {
+    padding: 14px 16px;
+    background-color: #163C4F;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cancelar {
+    text-align: center;
+}

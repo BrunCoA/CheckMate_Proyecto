@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(abstract-13-4k.jpg);
+    background-size: 100%;
+}
+
+.titulo {
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+.listadatos {
+    background-color: #12131B;
+    margin: auto;
+    width: 450px;
+    height: 90%;
+    padding: 10px;
+}
+
+.listadatos img {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-size: 35px 35px;
+    border: 0;
+    border-radius: 50%;
+}
+
+.datos {
+    margin: auto;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+.ci {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.nombre {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.apellido {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.botones button {
+    display: inline;
+    margin-top: 10px;
+    padding: 14px 16px;
+    background-color: #163C4F;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
