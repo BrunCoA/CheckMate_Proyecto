@@ -1,0 +1,128 @@
+/*Fpaginaprincipal.php*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(abstract-13-4k.jpg);
+    background-size: 100%;
+}
+
+.nav {
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #163C4F;
+    height: 45px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.chatmate button {
+    margin-top: 5px;
+    background: none;
+    border: 0px;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    margin-left: 260px;
+    cursor: pointer;
+    font-family: 'Righteous';
+}
+
+.fotodeperfil button {
+    background-size: 35px 35px;
+    border: 0;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    z-index: 0;
+    padding: 10px 16px;
+    margin-left: 940px;
+    background-image: url("imagenperfil.png");
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.ctn-modal {
+    display: flex;
+    width: 350px;
+    height: 500px;
+    position: fixed;
+    background-color: #12131B;
+    margin-left: 953px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.botones {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.verperfil button {
+    padding: 14px 16px;
+    background: none;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cerrarsesion button {
+    padding: 14px 16px;
+    background: none;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cancelar button {
+    padding: 14px 16px;
+    background: none;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.fotodeperfil2 img {
+    background-size: 100px 100px;
+    border: 0;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 75px;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+    position: fixed;
+}

@@ -8,25 +8,11 @@
     <link rel="stylesheet" href="css/appadmin.css">
 </head>
 <body>
-    <div class="container-all">
-        <header>
-            <div class="nav">
-                <div class="nav1">
-                   <a href="">
-                       <img src="css/ChatMate.svg" alt="ChatMate">
-                   </a>
-                </div>
-                <div class="nav2">
-                    <a href="">
-                        <img src="css/perfil.svg" alt="Perfil">
-                    </a>
-                    <a href="">
-                        <img src="css/solicitud.svg" alt="Solicitud Alumno">
-                    </a>
-                </div>
-
-            </div>
-        </header>        
-    </div>
+    <?php
+        include "layout/header.php";
+        $hdr= new Header();
+        $hdr->admin()
+        
+    ?>
 </body>
 </html>
