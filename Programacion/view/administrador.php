@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="css/appadmin.css">
 </head>
 <body>
-    <?php
-        include "layout/header.php";
-        $hdr= new Header();
-        $hdr->admin()
-        
-    ?>
+    <div class="container-all">
+        <?php
+            include "layout/header.php";
+            $hdr= new Header();
+            $hdr->admin()
+        ?>
+        <div class="ABML-container">
+            <ul>
+                <li><a href="">Orientaciones</a></li>
+                <li><a href="">Asignaturas</a></li>
+                <li><a href="">Grupos</a></li>
+                <li><a href="">Docentes</a></li>
+                <li><a href="">Alumnos</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

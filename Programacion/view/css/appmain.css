@@ -10,7 +10,8 @@ div {
 }
 
 body {
-    background-image: url(background-wallpaper-with-polygons-in-gradient-colors-vector.jpg);
+    background-image: url(main.svg);
+    background-attachment: fixed;
     overflow-y: visible;
 }
 

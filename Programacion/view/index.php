@@ -2,11 +2,11 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/appmain.css">
     <TITLE>ChatMate</TITLE>
 </head>
 
-<body style="overflow-y: visible;">
+<body>
 
     <div class="container-all">
         <div class="ctn-text">

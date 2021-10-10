@@ -2,8 +2,8 @@
 
 class Header{
     function admin(){
-        echo '<div class="container-all"><header><div class="nav"><div class="nav1"><a href=""><img src="css/ChatMate.svg" alt="ChatMate"></a></div><div class="nav2"><a href="">
-                <img src="css/perfil.svg" alt="Perfil"></a><a href=""><img src="css/solicitud.svg" alt="Solicitud Alumno"></a></div></div></header></div>';
+        echo '<header><div class="nav"><div class="nav1"><a href=""><img src="css/ChatMate.svg" alt="ChatMate"></a></div><div class="nav2"><a href="">
+                <img src="css/perfil.svg" alt="Perfil"></a><a href=""><img src="css/solicitud.svg" alt="Solicitud Alumno"></a></div></div></header>';
     }
     function alumno(){
         echo '<header>
