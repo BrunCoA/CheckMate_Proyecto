@@ -2,8 +2,20 @@
 
 class Header{
     function admin(){
-        echo '<header><div class="nav"><div class="nav1"><a href=""><img src="css/ChatMate.svg" alt="ChatMate"></a></div><div class="nav2"><a href="">
-                <img src="css/perfil.svg" alt="Perfil"></a><a href=""><img src="css/solicitud.svg" alt="Solicitud Alumno"></a></div></div></header>';
+        echo '
+        <header id="header">
+            <a id="logo" href="administrador.php">
+                <span class="appname">ChatMate</span>
+                <span class="user">Administrador</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="css/solicitud.svg" alt="Solicitud"></a></li>
+                    <li><a href="#"><img src="css/perfil.svg" alt="Perfil"></a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>';
     }
     function alumno(){
         echo '<header>
