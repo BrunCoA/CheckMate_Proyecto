@@ -1,9 +1,8 @@
 <?php
 include 'conexion.php';
-include 'Fpaginaprincipal.php';
 session_start();
-$cedulaalumnologin=$_POST['cedulausuario'];
-$passalumnologin=$_POST['password'];
+$cedulaalumnologin=$_POST['cedulaalumnologin'];
+$passalumnologin=$_POST['passalumnologin'];
 $cons = "SELECT * FROM usuario WHERE pass = '$passalumnologin' and ci = '$cedulaalumnologin'";
 $resultado = mysqli_query($conexion, $cons);
 $verificar = mysqli_num_rows($resultado);

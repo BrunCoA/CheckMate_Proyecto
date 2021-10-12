@@ -21,7 +21,7 @@
         </div>
         <div class="ctn-form">
             <h2 class="title">Iniciar Sesión</h2>
-            <form action="Bloginalumno.php">
+            <form action="Bloginalumno.php" method="POST">
                 <div class="nombredeusuario">
                     <label for="">Cedula</label>
                 </div>

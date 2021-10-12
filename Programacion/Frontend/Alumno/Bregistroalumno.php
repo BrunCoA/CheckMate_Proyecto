@@ -51,6 +51,6 @@ $resultado = mysqli_query($conexion, $insertar);
 if (!$resultado){
     echo 'error al registrarse';
 }else{
-    header("location: Floginalumno.php");
+    header("location: Fpaginaprincipal.php");
 }
 mysqli_close($conexion);
