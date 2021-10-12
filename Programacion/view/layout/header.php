@@ -3,18 +3,29 @@
 class Header{
     function admin(){
         echo '
-        <header id="header">
-            <a id="logo" href="administrador.php">
-                <span class="appname">ChatMate</span>
-                <span class="user">Administrador</span>
-            </a>
-            <nav>
+        <header class="header">
+            <div class="container logo-hnav">
+                <a class="logo" href="administrador.php">
+                    <span class="appname">ChatMate</span>
+                    <span class="user">Administrador</span>
+                </a>
+                <div class="hnav">
+                    <ul>
+                        <li><a href="#"><img src="css/solicitud.svg" alt="Solicitud"></a></li>
+                        <li><a href="#"><img src="css/perfil.svg" alt="Perfil"></a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container hnav listas">
                 <ul>
-                    <li><a href="#"><img src="css/solicitud.svg" alt="Solicitud"></a></li>
-                    <li><a href="#"><img src="css/perfil.svg" alt="Perfil"></a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+                    <li><a href="">Orientaciones</a></li>
+                    <li><a href="">Asignaturas</a></li>
+                    <li><a href="">Grupos</a></li>
+                    <li><a href="">Docentes</a></li>
+                    <li><a href="">Alumnos</a></li>
+                </ul>            
+            </div>
         </header>';
     }
     function alumno(){
