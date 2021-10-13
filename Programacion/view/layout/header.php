@@ -4,7 +4,7 @@ class Header{
     function admin(){
         echo '
         <header class="header">
-            <div class="container logo-hnav">
+            <div class="logo-hnav">
                 <a class="logo" href="administrador.php">
                     <span class="appname">ChatMate</span>
                     <span class="user">Administrador</span>
@@ -17,7 +17,7 @@ class Header{
                     </ul>
                 </div>
             </div>
-            <div class="container hnav listas">
+            <div class="listas">
                 <ul>
                     <li><a href="">Orientaciones</a></li>
                     <li><a href="">Asignaturas</a></li>

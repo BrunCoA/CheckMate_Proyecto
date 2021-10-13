@@ -17,7 +17,7 @@ body {
 .header {
 	background: #3a3a3a;
 	color: white;
-	padding: 2rem;
+	padding: 0.7rem;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -31,6 +31,9 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 95%;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .logo:hover {
@@ -70,9 +73,32 @@ body {
 .hnav ul li a:hover {
 	background: #0b76a6;
 }
-
+.listas{
+	display: none;
+}
+.listas ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+			
+.listas ul li a {
+	display: block;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	transition: all 0.5s linear;
+	border-radius: 5px;
+}
+			
+.listas ul li a:hover {
+	background: #0b76a6;
+}
 .container{
 	width: 90%;
 	max-width: 950px;
 	margin: 0 auto;
+}
+
+@media only screen and (max-width:767px) {
+	
 }
