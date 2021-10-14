@@ -37,6 +37,18 @@ li a {
     text-decoration: none;
 }
 
+.agenda a {
+    font-size: 12px;
+}
+
+.consulta a {
+    font-size: 12px;
+}
+
+.salachat a {
+    font-size: 12px;
+}
+
 li a:hover {
     background-color: #111;
 }
@@ -47,8 +59,7 @@ li a:hover {
     border: 0px;
     color: white;
     font-size: 30px;
-    position: fixed;
-    margin-left: 260px;
+    margin-left: 180px;
     cursor: pointer;
     font-family: 'Righteous';
 }
@@ -60,8 +71,8 @@ li a:hover {
     height: 35px;
     width: 35px;
     z-index: 0;
+    margin-left: 540px;
     padding: 10px 16px;
-    margin-left: 940px;
     background-image: url("imagenperfil.png");
     cursor: pointer;
     margin-top: 7px;
@@ -125,4 +136,65 @@ li a:hover {
     pointer-events: auto;
     opacity: 1;
     position: fixed;
+}
+
+.contenedor-agenda {
+    padding: 30px;
+}
+
+.ctn-agenda {
+    background-color: #12131B;
+    width: 450px;
+    height: 550px;
+    margin: auto;
+}
+
+.asignaturas {
+    padding: 30px;
+    color: white;
+}
+
+.asignatura {
+    padding: 10px;
+}
+
+.asignaturas button {
+    background: none;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.hacerconsulta {
+    display: none;
+}
+
+.gotoappalumno {
+    background: none;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+.contenedor-consulta {
+    padding: 50px;
+}
+
+.ctn-consulta {
+    background-color: #12131B;
+    width: 450px;
+    height: 550px;
+    margin: auto;
+    padding: 50px;
+}
+
+.ctn-consulta label {
+    color: white;
+    text-align: center;
 }
