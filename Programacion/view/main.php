@@ -9,18 +9,18 @@
 </head>
 <body>
             <form class="form" action="../controller/login.php" method="POST" enctype="multipart/form-data">
-                <h1>ChatMate</h1>
-                <h2 class="title">Iniciar Sesión</h2>
-                <div>
+                <div class="titulos">
+                    <h1>ChatMate</h1>
+                    <h2 class="title">Iniciar Sesión</h2></div>
+                <div class="input">
                     <label for="ci">CI de usuario</label>
                     <input type="text" id="ci" name="cilogin">
-                </div>
-                <div>
                     <label for="pass">Contraseña</label>
                     <input type="password" id="pass" name="passlogin">
                 </div>
                 <div class="ingresar">
                     <input type="submit" value="Ingresar">
+                    <input type="button" value="Registrarse">
                 </div>
             </form>
 </body>

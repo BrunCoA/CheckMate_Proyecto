@@ -5,7 +5,7 @@
     text-decoration: none;
 	margin: 0;
 }
-body,html{
+body,html {
 	height: 100%;
 }
 body {
@@ -21,46 +21,85 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-.form{
+.form {
+	padding-left: 2rem;
+	padding-right: 2rem;
 	font-weight: 700;
 	font-size: 1.2em;
 	color: white;
 	background: #dddddd;
 	border-radius: 3%;
 }
-.form div{
-	margin: 0 auto;
-	padding: 1rem;
+.input {
+	padding: 2rem;
+	padding-top: 0;
+	padding-bottom: 0.6rem;
 }
 
-.form div input{
-    margin: auto;
+.form .input input {
+	width: 92%;
+	height: 1.5rem;
     display: block;
-    color: black;
+    color: #333;
     text-align: center;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	padding: 0;
+	background-color: #444;
+	border-color: black;
+}
+.form .input input:hover {
+	border: 0;
+	background: #aaa;
+	transition: all 0.5s linear;
+}
+.form .input input:focus{
+	background: #fff;
+	border-color: #fff;
+}
+.ingresar {
+	margin: 0;
+	padding: 0.8rem;
+	padding-bottom: 2rem;
+    display: block;
+    text-align: center;
+	height: 10REM;
+}
+.ingresar input {
+	margin: 0 auto;
+	display: block;
+    color: #fff;
     border: 0px;
 	border-radius: 3px;
-	margin: 0;
-	padding: 0;
 }
-
-.ingresar{
-	padding: 0.5rem;
+.ingresar input[type="submit"] {
+	background-color: #111;
+	height: 2.5rem;
+	width: 9rem;
 }
-label{
+.ingresar input[type="button"] {
+	margin-top: 1rem;
+	background: #333;
+	height: 2rem;
+	width: 7rem;
+}
+label {
+	margin-left: 0.8rem;
 	color: #555;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
-
-h1{
-	padding: 1rem;
+.titulos {
+	text-align: center;
+	padding: 2rem;
+}
+h1 {
 	font-size: 3rem;
-	text-align: center;
 	color: #333;
+	margin-bottom: 0.6rem;
 }
 
-h2{
+h2 {
 	font-size: 2rem;
-	text-align: center;
 	color: #555;
 }
