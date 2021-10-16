@@ -13,7 +13,7 @@ class Header{
                     <ul>
                         <li><a href="#"><img src="css/solicitud.svg" alt="Solicitud"></a></li>
                         <li><a href="#"><img src="css/perfil.svg" alt="Perfil"></a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">LISTAS <img src="css/menu.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>

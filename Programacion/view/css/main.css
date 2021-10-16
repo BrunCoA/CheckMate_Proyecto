@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+	margin: 0;
+}
+body,html{
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0; 
+	font-size: 1em;
+    background: url(mainbg.svg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	flex-direction: row;
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.form{
+	font-weight: 700;
+	font-size: 1.2em;
+	color: white;
+	background: #dddddd;
+	border-radius: 3%;
+}
+.form div{
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.form div input{
+    margin: auto;
+    display: block;
+    color: black;
+    text-align: center;
+    border: 0px;
+	border-radius: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+.ingresar{
+	padding: 0.5rem;
+}
+label{
+	color: #555;
+	font-size: 1rem;
+}
+
+h1{
+	padding: 1rem;
+	font-size: 3rem;
+	text-align: center;
+	color: #333;
+}
+
+h2{
+	font-size: 2rem;
+	text-align: center;
+	color: #555;
+}
