@@ -8,7 +8,7 @@
     <title>ChatMate ingreso</title>
 </head>
 <body>
-            <form class="form" action="../controller/login.php" method="POST" enctype="multipart/form-data">
+            <form class="form" action="../model/login.php" method="POST" enctype="multipart/form-data">
                 <div class="titulos">
                     <h1>ChatMate</h1>
                     <h2 class="title">Iniciar Sesión</h2></div>

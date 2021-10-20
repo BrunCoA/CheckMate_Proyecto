@@ -1,15 +1,14 @@
 <?php
 include 'conexion.php';
-include 'Fpaginaprincipal.php';
 session_start();
-$cedulaalumnologin=$_POST['cedulausuario'];
-$passalumnologin=$_POST['password'];
-$cons = "SELECT * FROM usuario WHERE pass = '$passalumnologin' and ci = '$cedulaalumnologin'";
-$resultado = mysqli_query($conexion, $cons);
-$verificar = mysqli_num_rows($resultado);
+$cilogin=$_POST['cilogin'];
+$passlogin=$_POST['passlogin'];
+$cons = "SELECT * FROM usuario WHERE pass = '$passlogin' and ci = '$cilogin'";
+$resultado = $db->query($cons);
+$verificar = $resultado->fetch();
 if($verificar > 0){
-    $_SESSION['usuario'] = $cedulaalumnologin;
-    header("location:Fappalumno.php");
+    $_SESSION['usuario'] = $cilogin;
+    header("location:../view/administrador.php");
 }else{
     echo '<script>
     alert("Los datos ingresados no coinciden");
