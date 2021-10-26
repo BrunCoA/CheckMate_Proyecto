@@ -1,5 +1,5 @@
 <?php
-include 'conexion.php';
+include '../Alumno/conexion.php';
 session_start();
 $ceduladocentelogin=$_POST['ceduladocentelogin'];
 $passdocentelogin=$_POST['passdocentelogin'];

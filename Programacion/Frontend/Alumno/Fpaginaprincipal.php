@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="4.css">
     <TITLE>ChatMate</TITLE>
 </head>
 
@@ -22,7 +22,7 @@
         <div class="ctn-form">
             <h2 class="title">Iniciar Sesión</h2>
             <form action="Bloginalumno.php" method="POST">
-                <div class="nombredeusuario">
+                <div class="cideusuario">
                     <label for="">Cedula</label>
                 </div>
                 <div class="cedulausuario">
@@ -70,7 +70,7 @@
                             </form>
                         </div>
                         <div class="ctn-reg-docente">
-                            <form class="formdocente" action="Bregistrodocente.php" method="post" enctype="multipart/form-data">
+                            <form class="formdocente" action="../Clases Comunes/Bregistrodocente.php" method="post" enctype="multipart/form-data">
                                 <div class="regdocentetitulo">
                                     <h2>Registro de docente</h2>
                                 </div>
@@ -78,7 +78,10 @@
                                 <div class="nom" style="display: flex;"><input type="text" style="width: 40%;" placeholder="Primer nombre" name="nombrealumnoregistro"><input type="text" style="width: 40%;" placeholder="segundo nombre" name="nombrealumnoregistro"></div>
                                 <div class="ape" style="display: flex;"><input type="text" placeholder="Primer apellido" name="apellidoalumnoregistro" style="width: 40%;"><input type="text" placeholder="Segundo apellido" name="apellidoalumnoregistro" style="width: 40%;"></div>
                                 <div class="nicknamedocente"><input type="text" placeholder="Nombre de usuario" name="nicknameregistrodocente"></div>
-                                <div class="grupodocente"><input type="text" placeholder="Grupo" name="grupodocenteregistro"></div>
+                                <div class="asignaturadocente"><input type="checkbox" id="asig1" name="asig1docente" value="Matematica"><label for="asig1">Matematica</label><br>
+                                <input type="checkbox" id="asig2" name="asig2docente" value="Economía"><label for="asig2">Economía</label><br>
+                                <input type="checkbox" id="asig3" name="asig3docente" value="ADA"><label for="asig3">ADA</label><br>
+                                <input type="checkbox" id="asig4" name="asig4docente" value="Formación Empresarial"><label for="asig4">Formación Empresarial</label><br></div>
                                 <div class="passdocente"><input type="password" placeholder="Contraseña" name="passdocenteregistro"></div>
                                 <div class="verpassdocente"><input type="password" placeholder="Verificar Contraseña" name="passverdocenteregistro"></div>
                                 <div class="selectdocente">

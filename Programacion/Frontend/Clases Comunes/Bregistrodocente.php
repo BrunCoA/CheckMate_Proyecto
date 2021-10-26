@@ -1,10 +1,10 @@
 <?php
-include 'conexion.php';
+include '../Alumno/conexion.php';
 $imagen='';
 @$ci = $_POST ['ceduladocenteregistro'];
 @$nombre = $_POST ['nombredocenteregistro'];
 @$apellido = $_POST ['apellidodocenteregistro'];
-@$grupo = $_POST ['grupodocenteregistro'];
+@$asignatura = $_POST ['asignaturadocenteregistro'];
 @$pass = $_POST ['passdocenteregistro'];
 @$verpass = $_POST ['passverdocenteregistro'];
 if(isset($_FILES["foto"])){
@@ -59,6 +59,6 @@ $resultado = mysqli_query($conexion, $insertar);
 if (!$resultado){
     echo 'error al registrarse';
 }else{
-    header("location: Flogindocente.php");
+    header("location: ../Alumno/Fpaginaprincipal.php");
 }
 mysqli_close($conexion);

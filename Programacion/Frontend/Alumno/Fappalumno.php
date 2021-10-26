@@ -17,7 +17,7 @@ session_start();
         <div class="nav">
             <ul>
                 <li class="agenda" id="openagenda"><a href="Falumnoveagenda.php">Ver agenda de profesores</a></li>
-                <li class="consulta"><a href="">Consultas</a>
+                <li class="consulta"><a href="Fhacerconsulta.php">Consultas</a>
                     <div class="hacerconsulta">
                         <ul>
                             <li><a href="Fhacerconsulta.php">Hacer Consulta</a></li>
