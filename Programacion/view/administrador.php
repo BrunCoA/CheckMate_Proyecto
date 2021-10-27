@@ -14,7 +14,18 @@
             $hdr=new Header;
             $hdr->admin()
         ?>
-        
+        <div class="listas">
+            <ul>
+                <li><a href="abmladmin.php" target="abml">Orientaciones</a></li>
+                <li><a href="abmladmin.php" target="abml">Asignaturas</a></li>
+                <li><a href="abmladmin.php" target="abml">Grupos</a></li>
+                <li><a href="abmladmin.php" target="abml">Docentes</a></li>
+                <li><a href="abmladmin.php" target="abml">Alumnos</a></li>
+            </ul>
+        </div>
+        <p>
+            <iframe src="" name="abml" frameborder="0"></iframe>
+        </p>
         <?php
             include "layout/footer.php";
             $ftr=new Footer;

@@ -1,8 +1,15 @@
+
+/* ---General--- */
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 * {
     box-sizing: border-box;
     font-family: 'Azeret Mono', monospace;
     text-decoration: none;
+}
+body, html{
+	width: 100%;
+	height: 100%;
 }
 body {
 	margin: 0;
@@ -13,6 +20,15 @@ body {
 	line-height: 1.5em;
 	padding-top: 4.6875rem;
 }
+
+
+.container{
+	width: 90%;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+/* ---Header--- */
 
 .header {
 	background: #3a3a3a;
@@ -27,6 +43,9 @@ body {
 	color: white;
 	text-decoration: none;
 }
+
+/* ---Header nav items--- */
+
 .logo-hnav{
 	display: flex;
 	justify-content: space-between;
@@ -35,24 +54,20 @@ body {
 	max-width: 1500px;
 	margin: 0 auto;
 }
-
 .logo:hover {
 	color: #0b76a6;
-}
-	
+}	
 .logo .appname {
 	display: block;
 	font-weight: 700;
 	font-size: 1.2em;
-}
-	
+}	
 .logo .user {
 	display: block;
 	font-weight: 300;
 	font-size: 0.8em;
 	color: #999;
 }
-
 .hnav ul {
 	margin: 0;
 	padding: 0;
@@ -60,45 +75,59 @@ body {
 }
 .hnav ul li {
 	display: inline-block;
-}
-			
+}			
 .hnav ul li a {
-	display: block;
+	display: inline-block;
 	padding: 0.5rem 1rem;
 	text-decoration: none;
 	transition: all 0.5s linear;
 	border-radius: 5px;
-}
-			
+}			
 .hnav ul li a:hover {
-	background: #0b76a6;
-}
-.listas{
-	display: none;
-}
-.listas ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-			
-.listas ul li a {
-	display: block;
-	padding: 0.5rem 1rem;
-	text-decoration: none;
-	transition: all 0.5s linear;
-	border-radius: 5px;
-}
-			
-.listas ul li a:hover {
-	background: #0b76a6;
-}
-.container{
-	width: 90%;
-	max-width: 950px;
-	margin: 0 auto;
+	background: #4b4a4a;
 }
 
+/* ---Menu de Listas--- */
+
+.listas {
+	background: #4b4a4a;
+	color: white;
+	padding: 0.5rem;
+	position: fixed;
+	left: 0;
+	top: 4.375rem;
+	right: 0;
+}
+.listas ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	width: fit-content;
+}
+			
+.listas ul li {
+	display: inline-block;
+}
+.listas a{
+	display: inline-block;
+	color: white;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	transition: all 0.5s linear;
+}
+.listas ul li a:hover {
+	background: #3a3a3a;
+}
+
+/* ---Listas del ABML---*/
+
+iframe{
+	width: 100%;
+}
+
+footer{
+	margin-bottom: 0;
+}
 @media only screen and (max-width:767px) {
 	
 }
