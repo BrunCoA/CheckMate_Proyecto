@@ -3,10 +3,11 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    </style>
     <link rel="stylesheet" href="css/appalumno.css">
     <TITLE>Aplicacion de Alumno</TITLE>
 </head>
@@ -15,10 +16,15 @@ session_start();
     <header>
         <div class="nav">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">About</a></li>
+                <li class="agenda" id="openagenda"><a href="Falumnoveagenda.php">Ver agenda de profesores</a></li>
+                <li class="consulta"><a href="Fhacerconsulta.php">Consultas</a>
+                    <div class="hacerconsulta">
+                        <ul>
+                            <li><a href="Fhacerconsulta.php">Hacer Consulta</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="salachat"><a href="">Sala de chat</a></li>
                 <li>
                     <div class="chatmate"><button onclick="location.href='Fappalumno.php'">ChatMate</button></div>
                 </li>
@@ -40,6 +46,7 @@ session_start();
             </div>
         </div>
     </div>
+
     <script src="app2.js"></script>
 </body>
 
