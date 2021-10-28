@@ -3,15 +3,16 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <TITLE>Aplicacion de Alumno</TITLE>
+    <link rel="stylesheet" href="css/appalumno.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     </style>
-    <link rel="stylesheet" href="css/appalumno.css">
-    <TITLE>Aplicacion de Alumno</TITLE>
 </head>
-
 <body>
     <header>
         <div class="nav">
@@ -46,8 +47,6 @@ session_start();
             </div>
         </div>
     </div>
-
     <script src="app2.js"></script>
 </body>
-
 </HTML>

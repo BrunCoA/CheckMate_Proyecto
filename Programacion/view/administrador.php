@@ -16,21 +16,18 @@
         ?>
         <div class="listas">
             <ul>
-                <li><a href="abmladmin.php" target="abml">Orientaciones</a></li>
-                <li><a href="abmladmin.php" target="abml">Asignaturas</a></li>
-                <li><a href="abmladmin.php" target="abml">Grupos</a></li>
-                <li><a href="abmladmin.php" target="abml">Docentes</a></li>
-                <li><a href="abmladmin.php" target="abml">Alumnos</a></li>
+                <li><a href="abmladmin.php" target="abml1">Orientaciones</a></li>
+                <li><a href="abmladmin.php" target="abml2">Asignaturas</a></li>
+                <li><a href="abmladmin.php" target="abml3">Grupos</a></li>
+                <li><a href="abmladmin.php" target="abml4">Docentes</a></li>
+                <li><a href="abmladmin.php" target="abml5">Alumnos</a></li>
             </ul>
         </div>
-        <p>
-            <iframe src="" name="abml" frameborder="0"></iframe>
-        </p>
-        <?php
-            include "layout/footer.php";
-            $ftr=new Footer;
-            $ftr->admin()
-        ?>
+            <iframe src="" name="abml1" frameborder="0"></iframe>
+            <iframe src="" name="abml2" frameborder="0"></iframe>
+            <iframe src="" name="abml3" frameborder="0"></iframe>
+            <iframe src="" name="abml4" frameborder="0"></iframe>
+            <iframe src="" name="abml5" frameborder="0"></iframe>
     </div>
 </body>
 </html>
