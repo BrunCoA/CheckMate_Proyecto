@@ -1,7 +1,7 @@
 <?php
 include_once("conexion.php");
 
-class Personas_Model extends Conexion
+class Usuarios_Model extends Conexion
 {
     private $cedula;
     
@@ -23,7 +23,7 @@ class Personas_Model extends Conexion
         $this->conexion = new Conexion();
     }
 
-    public static function Listar_Personas_Ajax()
+    public static function Listar_Alumno()
     {
         $resultado = null;
         try {

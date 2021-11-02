@@ -16,7 +16,7 @@ $(function () {
         "serverSide": false,
         "order": [],
         "ajax": {
-            url: "listar.php",
+            url: "../controller/listarAlumno.php",
             type: "POST"
         },
         "columnDefs": [{ 

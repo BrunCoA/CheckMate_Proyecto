@@ -1,10 +1,10 @@
 <?php
 
-include_once('../model/personas_modelo.php');
+include_once('../model/usuarios.php');
 
 if(isset($_POST["persona_id"]))
 {
-	$result =  Personas_Model::Listar_Persona_Por_Cedula_Ajax($_POST["persona_id"]);
+	$result =  Usuarios_Model::Listar_Persona_Por_Cedula_Ajax($_POST["persona_id"]);
 	foreach($result as $row)
 	{
 		$output["id_persona"] = $row["id_persona"];

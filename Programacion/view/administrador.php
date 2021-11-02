@@ -16,11 +16,11 @@
         ?>
         <div class="listas">
             <ul>
-                <li><a href="abmlorientacion.php" target="abml">Orientaciones</a></li>
-                <li><a href="abmlasignatura.php" target="abml">Asignaturas</a></li>
-                <li><a href="abmlgrupo.php" target="abml">Grupos</a></li>
-                <li><a href="abmldocente.php" target="abml">Docentes</a></li>
-                <li><a href="abmlalumno.php" target="abml">Alumnos</a></li>
+                <li><a href="abmlOrientacion.php" target="abml">Orientaciones</a></li>
+                <li><a href="abmlAsignatura.php" target="abml">Asignaturas</a></li>
+                <li><a href="abmlGrupo.php" target="abml">Grupos</a></li>
+                <li><a href="abmlDocente.php" target="abml">Docentes</a></li>
+                <li><a href="abmlAlumno.php" target="abml">Alumnos</a></li>
             </ul>
         </div>
             <iframe name="abml" frameborder="0"></iframe>
