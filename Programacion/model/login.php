@@ -1,9 +1,10 @@
 <?php
 include 'conexion.php';
 session_start();
+$db=new Conexion;
 $cilogin=$_POST['cilogin'];
 $passlogin=$_POST['passlogin'];
-$cons = "SELECT * FROM usuario WHERE pass = '$passlogin' and ci = '$cilogin'";
+$cons = "SELECT administrador.ci FROM usuario, administrador WHERE pass='$passlogin' and usuario.ci='$cilogin' and usuario.ci=administrador.ci;";
 $resultado = $db->query($cons);
 $verificar = $resultado->fetch();
 if($verificar > 0){

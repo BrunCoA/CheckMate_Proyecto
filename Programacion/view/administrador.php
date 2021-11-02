@@ -23,7 +23,7 @@
                 <li><a href="abmlalumno.php" target="abml">Alumnos</a></li>
             </ul>
         </div>
-            <iframe src="" name="abml" frameborder="0"></iframe>
+            <iframe name="abml" frameborder="0"></iframe>
     </div>
 </body>
 </html>

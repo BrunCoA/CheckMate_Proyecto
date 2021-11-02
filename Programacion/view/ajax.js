@@ -1,7 +1,6 @@
 $(function () {
   
     $('#btn_agregar').on('click', onClickBotonAgregar);
-    $('#btn_salir').on('click', onClickBotonSalir);
 
     var dataTable = $('#user_data').DataTable({
         "language": { url: 'Spanish.json'},
@@ -34,7 +33,7 @@ $(function () {
 
         if (cedula != '' && primer_nombre != '' && primer_apellido != '') {
             $.ajax({
-                url: "agregar.php",
+                url: "../controller/agregar.php",
                 method: 'POST',
                 data: new FormData(this),
                 contentType: false,
@@ -53,7 +52,7 @@ $(function () {
     $(this).on('click', '.update', function () {
         let persona_id = $(this).attr("id");
         $.ajax({
-            url: "cargar_persona.php",
+            url: "../controller/cargar_persona.php",
             method: "POST",
             data: {
                 persona_id: persona_id
@@ -80,7 +79,7 @@ $(function () {
         var persona_id = $(this).attr("id");
         if (confirm("¿Estas seguro de Eliminar este registro?")) {
             $.ajax({
-                url: "eliminar.php",
+                url: "../model/eliminar.php",
                 method: "POST",
                 data: {
                     persona_id: persona_id
