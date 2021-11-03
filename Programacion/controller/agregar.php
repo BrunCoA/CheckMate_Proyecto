@@ -4,18 +4,17 @@ if(isset($_POST["h_operacion"]))
 {
 	if($_POST["h_operacion"] == "Agregar")
 	{
-		$id_persona_ingredada  = Usuarios_Model::Agregar_Persona_Static(
+		$id_persona_ingresada  = Usuarios_Model::Agregar_Persona_Static(
 			$_POST["txt_cedula"],
 			$_POST["txt_primer_nombre"],
 			$_POST["txt_segundo_nombre"],
 			$_POST["txt_primer_apellido"],
 			$_POST["txt_segundo_apellido"],
-			date("Ymd", strtotime($_POST["txt_fecha_nac"]))
+			$_POST["txt_pass"]
 		);	
 
-		if(!empty($id_persona_ingredada))
-			echo $id_persona_ingredada;
-		
+		if(!empty($id_persona_ingresada))
+			echo $id_persona_ingresada;
 	}
 
 	if($_POST["h_operacion"] == "Editar")
@@ -26,7 +25,7 @@ if(isset($_POST["h_operacion"]))
 			$_POST["txt_segundo_nombre"],
 			$_POST["txt_primer_apellido"],
 			$_POST["txt_segundo_apellido"],
-			date("Ymd", strtotime($_POST["txt_fecha_nac"])),
+			$_POST["txt_pass"],
 			$_POST["h_persona_id"]
 		);
 

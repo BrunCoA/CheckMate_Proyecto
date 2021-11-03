@@ -16,7 +16,7 @@ $(function () {
         "serverSide": false,
         "order": [],
         "ajax": {
-            url: "../controller/listarAlumno.php",
+            url: "listarAlumno.php",
             type: "POST"
         },
         "columnDefs": [{ 
@@ -26,12 +26,12 @@ $(function () {
     });
     $(this).on('submit', '#frm_persona', function (event) {
         event.preventDefault();
-        
-        var cedula = $('#cedula').val();
+        var cedula = $('#txt_cedula').val();
         var primer_nombre = $('#txt_primer_nombre').val();
         var primer_apellido = $('#txt_primer_apellido').val();
+        var pass = $('#txt_pass').val();
 
-        if (cedula != '' && primer_nombre != '' && primer_apellido != '') {
+        if (cedula != '' && primer_nombre != '' && primer_apellido != '' &&  pass != '') {
             $.ajax({
                 url: "../controller/agregar.php",
                 method: 'POST',
@@ -45,7 +45,7 @@ $(function () {
                 }
             });
         } else {
-            alert("Los campos Cedula, Primer Nombre y Primer Apellido son requeridos");
+            alert("Los campos Cedula, Primer Nombre, Primer Apellido y Contraseña son requeridos");
         }
     });
 

@@ -198,8 +198,10 @@ CREATE TABLE `sala_chat` (
 
 CREATE TABLE `usuario` (
   `ci` int(8) NOT NULL,
-  `nom` varchar(64) NOT NULL,
-  `ape` varchar(64) NOT NULL,
+  `p_nom` varchar(64) NOT NULL,
+  `s_nom` varchar(64) ,
+  `p_ape` varchar(64) NOT NULL,
+  `s_ape` varchar(64) ,
   `activo` tinyint(1) NOT NULL,
   `pass` varchar(64) NOT NULL,
   `foto` varchar(255) NOT NULL,

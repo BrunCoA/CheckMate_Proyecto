@@ -28,8 +28,8 @@ class Usuarios_Model extends Conexion
         $resultado = null;
         try {
             $con = new Conexion();
-            $consulta = "SELECT ci, p_nom, s_nom, 
-            p_ape, s_ape FROM usuario";
+            $consulta = "SELECT usuario.ci, p_nom, s_nom, 
+            p_ape, s_ape, pass FROM usuario, alumno WHERE usuario.ci=alumno.ci";
             $resultado = $con->query($consulta)->fetchAll(PDO::FETCH_ASSOC);
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
@@ -143,7 +143,7 @@ class Usuarios_Model extends Conexion
         echo "<br>===============================================================";
     }
 
-    public static function Agregar_Persona_SP($cedula, $n1, $n2, $a1, $a2, $fnac)
+    public static function Agregar_Persona_SP($cedula, $n1, $n2, $a1, $a2, $pass)
     {
         try {
             $con = new Conexion();
@@ -154,7 +154,7 @@ class Usuarios_Model extends Conexion
             $insert->bindParam(3, $n2, PDO::PARAM_STR, 50);
             $insert->bindParam(4, $a1, PDO::PARAM_STR, 50);
             $insert->bindParam(5, $a2, PDO::PARAM_STR, 50);
-            $insert->bindParam(6, $fnac, PDO::PARAM_STR, 10);
+            $insert->bindParam(6, $pass, PDO::PARAM_STR, 10);
             $insert->bindParam(7, $idInsert, PDO::PARAM_INT | PDO::PARAM_INPUT_OUTPUT);
             $insert->execute();
             return $idInsert;
@@ -163,51 +163,51 @@ class Usuarios_Model extends Conexion
         }
     }
 
-    public function Agregar_Persona($cedula, $n1, $n2, $a1, $a2, $fnac)
+    public function Agregar_Persona($cedula, $n1, $n2, $a1, $a2, $pass)
     {
 
         $sql = "INSERT INTO persona (
-            cedula, 
-            primer_nombre, 
-            segundo_nombre, 
-            primer_apellido, 
-            segundo_apellido, 
-            fecha_nac) VALUES (?,?,?,?,?,?)";
+            ci, 
+            p_nom, 
+            s_nom, 
+            p_ape, 
+            s_ape, 
+            pass) VALUES (?,?,?,?,?,?)";
         $insert =  $this->conexion->prepare($sql);
-        $arrData = array($cedula, $n1, $n2, $a1, $a2, $fnac);
+        $arrData = array($cedula, $n1, $n2, $a1, $a2, $pass);
         $insert->execute($arrData);
         $idInsert =  $this->conexion->lastInsertId();
         return $idInsert;
     }
 
-    public static function Agregar_Persona_Static($cedula, $n1, $n2, $a1, $a2, $fnac)
+    public static function Agregar_Persona_Static($cedula, $n1, $n2, $a1, $a2, $pass)
     {
 
         $con = new Conexion();
-        $sql = "INSERT INTO persona (
-            cedula, 
-            primer_nombre, 
-            segundo_nombre, 
-            primer_apellido, 
-            segundo_apellido, 
-            fecha_nac) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO usuario (
+            ci, 
+            p_nom, 
+            s_nom, 
+            p_ape, 
+            s_ape, 
+            pass)";
         $insert = $con->prepare($sql);
-        $arrData = array($cedula, $n1, $n2, $a1, $a2, $fnac);
+        $arrData = array($cedula, $n1, $n2, $a1, $a2, $pass);
         $insert->execute($arrData);
         $idInsert = $con->lastInsertId();
         return $idInsert;
     }
 
-    public static function Modificar_Persona_Static($cedula, $n1, $n2, $a1, $a2, $fnac, $id_persona)
+    public static function Modificar_Persona_Static($cedula, $n1, $n2, $a1, $a2, $pass, $id_persona)
     {
         $con = new Conexion();
         $sql = "UPDATE persona SET 
-            cedula = :cedula,
-            primer_nombre = :n1, 
-            segundo_nombre = :n2, 
-            primer_apellido = :a1, 
-            segundo_apellido = :a2, 
-            fecha_nac = :fnac
+            ci = :cedula,
+            p_nom = :n1, 
+            s_nom = :n2, 
+            p_ape = :a1, 
+            s_ape = :a2, 
+            pass = :pass
             WHERE id_persona = :id_persona";
 
         $update = $con->prepare($sql);
