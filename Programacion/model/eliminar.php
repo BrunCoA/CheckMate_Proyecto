@@ -1,10 +1,10 @@
 <?php
 
-include_once('usuarios.php');
+include_once('listados.php');
 
 if(isset($_POST["ci"]))
 {
-	$result  = Usuarios_Model::Eliminar_Persona_Static($_POST["ci"]);
+	$result  = Listados_Model::Eliminar_Usuario_Static($_POST["ci"]);
 	
 	if(!empty($result))
 	{

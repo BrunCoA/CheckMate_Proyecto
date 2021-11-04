@@ -41,7 +41,8 @@ CREATE TABLE `orientacion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `grupo` (
-  `id_gr` varchar(5) NOT NULL,
+  `id_gr` int(4) NOT NULL AUTO_INCREMENT,
+  `nom_gr` varchar(5) NOT NULL,
   `id_or` int(36) NOT NULL,
   PRIMARY KEY (id_gr),
   CONSTRAINT fk_grupo_id_or FOREIGN KEY (id_or) REFERENCES orientacion (id_or)
@@ -66,7 +67,7 @@ CREATE TABLE `docente_dicta_asignatura` (
 
 CREATE TABLE `alumno_ingresa_grupo` (
   `ci` int(8) NOT NULL,
-  `id_gr` varchar(5) NOT NULL,
+  `id_gr` int(4) NOT NULL,
   CONSTRAINT fk_alumno_ingresa_grupo_ci FOREIGN KEY (ci) REFERENCES alumno (ci),
   CONSTRAINT fk_alumno_ingresa_grupo_id_gr FOREIGN KEY (id_gr) REFERENCES grupo (id_gr)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

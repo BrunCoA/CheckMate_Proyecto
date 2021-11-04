@@ -1,19 +1,18 @@
 <?php
 
-include_once('../model/usuarios.php');
+include_once('../model/listados.php');
 
-if(isset($_POST["persona_id"]))
+if(isset($_POST["ci"]))
 {
-	$result =  Usuarios_Model::Listar_Persona_Por_Cedula_Ajax($_POST["persona_id"]);
+	$result =  Listados_Model::Listar_Por_Cedula($_POST["ci"]);
 	foreach($result as $row)
 	{
-		$output["id_persona"] = $row["id_persona"];
-		$output["cedula"] = $row["cedula"];
-        $output["primer_nombre"] = $row["primer_nombre"];
-        $output["segundo_nombre"] = $row["segundo_nombre"];
-        $output["primer_apellido"] = $row["primer_apellido"];
-        $output["segundo_apellido"] = $row["segundo_apellido"];
-		$output["fecha_nac"] = date('Y-m-d', strtotime($row["fecha_nac"]));
+		$output["ci"] = $row["ci"];
+        $output["p_nom"] = $row["p_nom"];
+        $output["s_nom"] = $row["s_nom"];
+        $output["p_ape"] = $row["p_ape"];
+        $output["s_ape"] = $row["s_ape"];
+		$output["pass"] = $row['pass'];
 	}
 	echo json_encode($output);
 }

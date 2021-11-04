@@ -14,7 +14,7 @@
 		<h1 align="center">Lista de Alumnos</h1>
 	    <div>
 			<div align="right">
-				<button type="button" id="btn_agregar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#personaModal">
+				<button type="button" id="btn_agregar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#abmlModal">
 					Agregar Alumno
 				</button>
 			</div>
@@ -38,9 +38,9 @@
 </body>
 </html>
 <!-- Modal -->
-<div class="modal fade" id="personaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="abmlModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
-		<form method="post" id="frm_persona">
+		<form method="post" id="frm_abml">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Agregar Alumno</h5>
@@ -70,7 +70,7 @@
 					<br />
 				</div>
 				<div class="modal-footer">
-					<input type="hidden" name="h_persona_id" id="h_persona_id" />
+					<input type="hidden" name="h_cedula" id="h_cedula" />
 					<input type="hidden" name="h_operacion" id="h_operacion" />
 					<input type="submit" name="accion" id="accion" class="btn btn-success" value="Agregar" />
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -86,4 +86,4 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.3.1/jszip-2.5.0/dt-1.10.25/b-1.7.1/b-html5-1.7.1/b-print-1.7.1/date-1.1.1/kt-2.6.2/r-2.2.9/sl-1.3.3/datatables.min.js"></script>
 
-<script type="text/javascript" src="ajax.js" language="javascript"></script>
+<script type="text/javascript" src="ajaxAlumno.js" language="javascript"></script>

@@ -3,7 +3,7 @@
 include_once('../model/listados.php');
 
 try {
-	$result = Listados_Model::Listar_Alumno();
+	$result = Listados_Model::Listar_Docente();
 	$datos = array();
 	foreach ($result as $row) {
 		$sub_array = array();

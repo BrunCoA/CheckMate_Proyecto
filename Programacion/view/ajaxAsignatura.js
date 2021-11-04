@@ -16,15 +16,11 @@ $(function () {
         "serverSide": false,
         "order": [],
         "ajax": {
-            url: "listarAlumno.php",
+            url: "listarAsignatura.php",
             type: "POST"
-        },
-        "columnDefs": [{ 
-            "targets": [5, 6], 
-            "orderable": false
-        }]
+        }
     });
-    $(this).on('submit', '#frm_persona', function (event) {
+    $(this).on('submit', '#frm_abml', function (event) {
         event.preventDefault();
         var cedula = $('#txt_cedula').val();
         var primer_nombre = $('#txt_primer_nombre').val();
@@ -39,8 +35,8 @@ $(function () {
                 contentType: false,
                 processData: false,
                 success: function (data) {
-                    $('#frm_persona')[0].reset();
-                    $('#personaModal').modal('hide');
+                    $('#frm_abml')[0].reset();
+                    $('#abmlModal').modal('hide');
                     dataTable.ajax.reload();
                 }
             });
@@ -50,16 +46,16 @@ $(function () {
     });
 
     $(this).on('click', '.update', function () {
-        let persona_id = $(this).attr("id");
+        let cedula = $(this).attr("id");
         $.ajax({
             url: "../controller/cargar_persona.php",
             method: "POST",
             data: {
-                persona_id: persona_id
+                cedula: cedula
             },
             dataType: "json",
             success: function (data) {
-                $('#personaModal').modal('show');
+                $('#abmlModal').modal('show');
 
                 $('#txt_cedula').val(data.cedula);
                 $('#txt_primer_nombre').val(data.primer_nombre);
@@ -68,7 +64,7 @@ $(function () {
                 $('#txt_segundo_apellido').val(data.segundo_apellido);
 
                 $('.modal-title').text("Editar Persona");
-                $('#h_persona_id').val(persona_id);
+                $('#h_cedula').val(cedula);
                 $('#accion').val("Editar");
                 $('#h_operacion').val("Editar");
             }
@@ -76,13 +72,13 @@ $(function () {
     });
 
     $(this).on('click', '.delete', function () {
-        var persona_id = $(this).attr("id");
+        var cedula = $(this).attr("id");
         if (confirm("¿Estas seguro de Eliminar este registro?")) {
             $.ajax({
                 url: "../model/eliminar.php",
                 method: "POST",
                 data: {
-                    persona_id: persona_id
+                    cedula: cedula
                 },
                 success: function (data) {
                     dataTable.ajax.reload();
@@ -96,7 +92,7 @@ $(function () {
 
 function onClickBotonAgregar() {
 
-    $('#frm_persona')[0].reset();
+    $('#frm_abml')[0].reset();
     $('.modal-title').text("Agregar Persona");
     $('#accion').val("Agregar");
     $('#operacion').val("Agregar");
