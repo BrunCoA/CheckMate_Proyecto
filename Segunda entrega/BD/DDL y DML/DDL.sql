@@ -117,6 +117,8 @@ CREATE TABLE `mensaje` (
   `id_mensaje` int(36) NOT NULL AUTO_INCREMENT,
   `id_chat` int(36) NOT NULL,
   `ci` int(8) NOT NULL,
+  `msj` mediumblob,
+  `created_on` timestamp,
   PRIMARY KEY (id_mensaje),
   CONSTRAINT fk_mensaje_id_chat FOREIGN KEY (id_chat) REFERENCES sala_chat (id_chat),
   CONSTRAINT fk_mensaje_ci FOREIGN KEY (ci) REFERENCES usuario (ci)

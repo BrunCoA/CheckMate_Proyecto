@@ -51,56 +51,36 @@ INSERT INTO `grupo` (`nom_gr`, `id_or`) VALUES ('3ºBC', 4);
 INSERT INTO `grupo` (`nom_gr`, `id_or`) VALUES ('3ºBE', 5);
 INSERT INTO `grupo` (`nom_gr`, `id_or`) VALUES ('3ºBF', 6);
 
+INSERT INTO agenda (`id_agenda`, `dia`, `hora_in`, `ci`, `id_asig`, `hora_fin`) VALUES (1, '0000-00-00 00:00:00', NULL, 12312311, 1, NULL);
+INSERT INTO agenda (`id_agenda`, `dia`, `hora_in`, `ci`, `id_asig`, `hora_fin`) VALUES (2, '0000-00-00 00:00:00', NULL, 12345678, 2, NULL);
+
+INSERT INTO `alumno_ingresa_grupo` (`ci`, `id_gr`) VALUES (22222222, '2');
+INSERT INTO `alumno_ingresa_grupo` (`ci`, `id_gr`) VALUES (51823293, '9');
+INSERT INTO `alumno_ingresa_grupo` (`ci`, `id_gr`) VALUES (51800449, '9');
+
+INSERT INTO `consulta` (`ci`) VALUES (51800449);
+INSERT INTO `consulta` (`ci`) VALUES (22222222);
+INSERT INTO `consulta` (`ci`) VALUES (51800449);
+INSERT INTO `consulta` (`ci`) VALUES (51823293);
+INSERT INTO `consulta` (`ci`) VALUES (22222222);
+
+INSERT INTO `docente_dicta_asignatura` (`ci`, `id_asig`) VALUES (33333333, 3);
+INSERT INTO `docente_dicta_asignatura` (`ci`, `id_asig`) VALUES (33333333, 2);
+INSERT INTO `docente_dicta_asignatura` (`ci`, `id_asig`) VALUES (33333333, 1);
+INSERT INTO `docente_dicta_asignatura` (`ci`, `id_asig`) VALUES (44444444, 4);
+
+INSERT INTO `entra_sala` (`ci`, `id_chat`) VALUES (22222222, NULL, NULL, 1, NULL);
+INSERT INTO `entra_sala` (`ci`, `id_chat`) VALUES (51823293, NULL, NULL, 1, NULL);
 
 
+INSERT INTO `mensaje` (`id_mensaje`, `id_chat`, `ci`, `msj`) VALUES (1, 1, 51823293, 'hola');
+INSERT INTO `mensaje` (`id_mensaje`, `id_chat`, `ci`, `msj`) VALUES (2, 1, 51823293, 'como estas');
 
+INSERT INTO `mensaje_asincronico` (`id_text_asin`, `ci`, `num_cons`) VALUES (1, 22222222, 1);
+INSERT INTO `mensaje_asincronico` (`id_text_asin`, `ci`, `num_cons`) VALUES (2, 22222222, 2);
+INSERT INTO `mensaje_asincronico` (`id_text_asin`, `ci`, `num_cons`) VALUES (3, 51823293, 1);
+INSERT INTO `mensaje_asincronico` (`id_text_asin`, `ci`, `num_cons`) VALUES (4, 51800449, 1);
 
-
-
-
-
-
-INSERT INTO `agenda` (`id_agenda`, `dia`, `hora_in`, `ci`, `id_asig`, `hora_fin`) VALUES
-(1, '0000-00-00 00:00:00', NULL, 12312311, 1, NULL),
-(2, '0000-00-00 00:00:00', NULL, 12345678, 2, NULL);
-
-INSERT INTO `alumno_ingresa_grupo` (`ci`, `id_gr`) VALUES
-(11111111, '1'),
-(51823293, '2'),
-(21123211, '2'),
-(78945612, '1');
-
-INSERT INTO `consulta` (`num_cons`, `ci`, `estado`, `hora_in`, `hora_fin`, `fec_cons`) VALUES
-(1, 78945612, NULL, NULL, NULL, NULL),
-(2, 78945612, NULL, NULL, NULL, NULL),
-(3, 51823293, NULL, NULL, NULL, NULL),
-(4, 78945612, NULL, NULL, NULL, NULL),
-(5, 11111111, NULL, NULL, NULL, NULL);
-
-
-INSERT INTO `docente_dicta_asignatura` (`ci`, `id_asig`) VALUES
-(12312311, 1),
-(12345678, 2),
-(12312311, 3),
-(12312311, 4);
-
-INSERT INTO `entra_sala` (`ci`, `hora_en`, `hora_sal`, `id_chat`, `anfitrion`) VALUES
-(11111111, NULL, NULL, 1, NULL),
-(51823293, NULL, NULL, 1, NULL);
-
-
-INSERT INTO `mensaje` (`id_mensaje`, `id_chat`, `ci`) VALUES
-(1, 1, 12312311),
-(2, 2, 21123211);
-
-INSERT INTO `mensaje_asincronico` (`id_text_asin`, `ci`, `num_cons`) VALUES
-(1, 21123211, 1),
-(2, 21123211, 2),
-(3, 78945612, 3),
-(4, 78945612, 4);
-
-
-INSERT INTO `sala_chat` (`id_chat`, `hora_inicio`, `hora_cierre`, `estado_chat`) VALUES
-(1, NULL, NULL, NULL),
-(2, NULL, NULL, NULL),
-(3, NULL, NULL, NULL);
+INSERT INTO `sala_chat` (`id_chat`) VALUES (1);
+INSERT INTO `sala_chat` (`id_chat`) VALUES (2);
+INSERT INTO `sala_chat` (`id_chat`) VALUES (3);

@@ -2,11 +2,11 @@
 
 class Conexion extends PDO
 {
-   private const USER = "root";
-   private const PASS = "";
+   private const USER = "bruno.correa";
+   private const PASS = "51823293";
    private const DB = "db_chatmate";
    private const PORT = "3306";
-   private const HOST = "localhost" . ":" . self::PORT;
+   private const HOST = "192.168.5.50" . ":" . self::PORT;
    private const DSN = "mysql:host=" . self::HOST . ";dbname=" . self::DB . ";charset=utf8";
 
    public function __CONSTRUCT()
