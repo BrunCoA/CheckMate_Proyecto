@@ -1,6 +1,15 @@
 <?php
-include 'conexion.php';
 session_start();
+$sesion=$_SESSION['ci'];
+if($sesion == null || $sesion =''){
+    header("Location: Fpaginaprincipal.php");
+    die();
+}
+    include "conexion.php";
+
+    $sql = "SELECT * FROM `chat`";
+
+    $query = mysqli_query($conexion, $sql);
 ?>
 <html>
 <html lang="es">

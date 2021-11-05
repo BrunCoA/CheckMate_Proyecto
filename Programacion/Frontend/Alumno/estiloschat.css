@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(fondochat.jpg);
+    background-size: 100%;
+}
+
+p {
+    color: black;
+}
+
+.display-chat {
+    background-color: white;
+    border: 5px solid #ccc!important;
+    border-color: #000!important;
+    width: 700px;
+    height: 400px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+.message {
+    padding: 5px;
+    text-align: left;
+}
+
+.form-group {
+    padding: 15px;
+    display: inline-flex;
+}
+
+.cancelar button {
+    padding: 3px;
+}
+
+.form {
+    display: inline-flex;
+}
+
+.form textarea {
+    padding: 5px;
+    width: 500px;
+    height: 40px;
+    text-align: left;
+}
+
+.form button {
+    padding: 5px;
+    height: 40px;
+    width: 80px;
+}
+
+.message {
+    padding: 5px;
+    background-color: #FCFF9B;
+    border: 1px solid #FCFF9B;
+    border-radius: 16px;
+    width: 100%;
+    display: block;
+}

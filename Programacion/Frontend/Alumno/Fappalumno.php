@@ -1,5 +1,10 @@
 <?php
 session_start();
+$sesion=$_SESSION['ci'];
+if($sesion == null || $sesion =''){
+    header("Location: Fpaginaprincipal.php");
+    die();
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -24,7 +29,7 @@ session_start();
                         </ul>
                     </div>
                 </li>
-                <li class="salachat"><a href="">Sala de chat</a></li>
+                <li class="salachat"><a href="chat.php">Sala de chat</a></li>
                 <li>
                     <div class="chatmate"><button onclick="location.href='Fappalumno.php'">ChatMate</button></div>
                 </li>

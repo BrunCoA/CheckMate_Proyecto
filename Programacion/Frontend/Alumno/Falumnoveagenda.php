@@ -1,5 +1,10 @@
 <?php
 session_start();
+$sesion=$_SESSION['ci'];
+if($sesion == null || $sesion =''){
+    header("Location: Fpaginaprincipal.php");
+    die();
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
