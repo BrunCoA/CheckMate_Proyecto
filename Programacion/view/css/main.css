@@ -27,11 +27,11 @@ body {
 /* LOGIN */
 
 .form {
-	display: none;
+	display: auto;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	font-weight: 700;
-	font-size: 1.2em;
+	font-size: 1rem;
 	color: white;
 	background: #dddddd;
 	border-radius: 3%;
@@ -123,6 +123,7 @@ h2 {
 /* ELECCION DE REGISTRO */
 
 .register {
+	display: none;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	font-weight: 700;
@@ -133,7 +134,6 @@ h2 {
 	margin: 0;
 	padding: 0.8rem;
 	padding-bottom: 2rem;
-	display: block;
 	text-align: center;
 }
 
@@ -169,7 +169,7 @@ h2 {
 .qm-registro {
 	margin: 0;
 	padding: 0.8rem;
-	display: none;
+	display: auto;
 	text-align: center;
 	height: 12rem;
 }
@@ -177,7 +177,7 @@ h2 {
 /* REGISTRO ALUMNO */
 
 .formAlumno {
-	display: auto;
+	display: none;
 }
 
 .formAlumno .w-inp {

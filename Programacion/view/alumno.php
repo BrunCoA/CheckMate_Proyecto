@@ -43,8 +43,8 @@ session_start();
         <div class="ctn-modal" id="modal">
             <div class="botones">
                 <div class="fotodeperfil2"><img src="imagenperfil.png"></div>
-                <div class="verperfil"><button onclick="location.href='Fperfilalumno.php'">Ver perfil</button></div>
-                <div class="cerrarsesion"><button onclick="location.href='Blogout.php'">Cerrar sesion</button></div>
+                <div class="verperfil"><button onclick="location.href='perfil.php'">Ver perfil</button></div>
+                <div class="cerrarsesion"><button onclick="location.href='../controller/logout.php'">Cerrar sesion</button></div>
                 <div class="cancelar"><button id="close">Cancelar</button></div>
             </div>
         </div>
