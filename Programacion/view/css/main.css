@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 * {
-    box-sizing: border-box;
-    font-family: 'Azeret Mono', monospace;
-    text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Azeret Mono', monospace;
+	text-decoration: none;
 	margin: 0;
 }
-body,html {
+
+body, html {
 	height: 100%;
 }
+
 body {
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 	font-size: 1em;
-    background: url(mainbg.svg);
+	background: url(mainbg.svg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	flex-direction: row;
-    display: flex;
+	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
+
+/* LOGIN */
+
 .form {
+	display: none;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	font-weight: 700;
@@ -30,18 +36,19 @@ body {
 	background: #dddddd;
 	border-radius: 3%;
 }
+
 .input {
 	padding: 2rem;
 	padding-top: 0;
 	padding-bottom: 0.6rem;
 }
 
-.form .input input {
+.input input {
 	width: 92%;
 	height: 1.5rem;
-    display: block;
-    color: #333;
-    text-align: center;
+	display: block;
+	color: #333;
+	text-align: center;
 	border-radius: 3px;
 	margin: 0 auto;
 	margin-bottom: 1.5rem;
@@ -49,50 +56,59 @@ body {
 	background-color: #444;
 	border-color: black;
 }
-.form .input input:hover {
+
+.input input:hover {
 	border: 0;
 	background: #aaa;
 	transition: all 0.5s linear;
 }
-.form .input input:focus{
+
+.input input:focus {
 	background: #fff;
 	border-color: #fff;
 }
+
 .ingresar {
 	margin: 0;
 	padding: 0.8rem;
 	padding-bottom: 2rem;
-    display: block;
-    text-align: center;
+	display: block;
+	text-align: center;
 	height: 10REM;
 }
+
 .ingresar input {
 	margin: 0 auto;
 	display: block;
-    color: #fff;
-    border: 0px;
+	color: #fff;
+	border: 0px;
 	border-radius: 3px;
 }
+
 .ingresar input[type="submit"] {
 	background-color: #111;
 	height: 2.5rem;
 	width: 9rem;
 }
+
 .ingresar input[type="button"] {
 	margin-top: 1rem;
 	background: #333;
 	height: 2rem;
 	width: 7rem;
 }
+
 label {
 	margin-left: 0.8rem;
 	color: #555;
 	font-size: 0.8rem;
 }
+
 .titulos {
 	text-align: center;
 	padding: 2rem;
 }
+
 h1 {
 	font-size: 3rem;
 	color: #333;
@@ -102,4 +118,168 @@ h1 {
 h2 {
 	font-size: 2rem;
 	color: #555;
+}
+
+/* ELECCION DE REGISTRO */
+
+.register {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-weight: 700;
+	font-size: 1.2em;
+	color: white;
+	background: #dddddd;
+	border-radius: 3%;
+	margin: 0;
+	padding: 0.8rem;
+	padding-bottom: 2rem;
+	display: block;
+	text-align: center;
+}
+
+.register input {
+	margin: 0 auto;
+	display: inline-block;
+	color: #111;
+	border: 0px;
+	border-radius: 3px;
+}
+
+.register input[type="submit"] {
+	background-color: #333;
+	border-radius: 0.2rem;
+	height: 2.5rem;
+	width: 9rem;
+	color: #bbb;
+}
+
+.register input[type="button"] {
+	padding: 0.4rem;
+	margin: 00.7rem;
+	background: #555;
+	width: 7rem;
+	border-radius: 0.5rem;
+}
+
+.register h2 {
+	padding: 1.5rem;
+	padding-bottom: 2.3rem;
+}
+
+.qm-registro {
+	margin: 0;
+	padding: 0.8rem;
+	display: none;
+	text-align: center;
+	height: 12rem;
+}
+
+/* REGISTRO ALUMNO */
+
+.formAlumno {
+	display: auto;
+}
+
+.formAlumno .w-inp {
+	margin: 0 auto;
+	width: 30rem;
+	padding: 0;
+}
+
+.w-inp input {
+	margin: 0.3rem auto;
+}
+
+.w-inp .pares {
+	margin: 0 auto;
+	width: 14rem;
+	display: inline-block;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.selectFoto {
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.fotito {
+	margin: 0 auto;
+	border: 2px solid #6a6a6a;
+	border-radius: 0.5rem;
+	display: inline-block;
+	cursor: pointer;
+	background-color: #aaaaaa;
+	color: #222;
+	padding: 0.7rem;
+	font-size: 1rem;
+}
+
+/* REGISTRO DOCENTE */
+
+.formDocente {
+	display: none;
+}
+
+.formDocente .w-inp {
+	margin: 0 auto;
+	width: 30rem;
+	padding: 0;
+}
+
+/* CHECKBOXS */
+
+.multiSelect {
+	margin: 0 auto;
+	width: 27.8rem;
+	position: initial;
+}
+
+.selectBox {
+	position: inherit;
+}
+
+.selectBox select {
+	width: 27.8rem;
+	text-align: center;
+}
+
+.overSelect {
+	width: fit-content;
+	height: fit-content;
+}
+
+#checkboxes {
+	display: block;
+	border: 1px #dadada solid;
+	position: absolute;
+	width: 27.8rem;
+	background-color: white;
+	box-sizing: border-box;
+	overflow-y: auto;
+	max-height: 10rem;
+}
+
+#checkboxes.hide {
+	display: none;
+}
+
+#checkboxes label {
+	text-align: justify;
+	float: right;
+	width: 100%;
+	font-size: 1rem;
+}
+
+#checkboxes input {
+	margin-left: 1rem;
+}
+#checkboxes label:hover {
+	background-color: #1e90ff;
+}
+
+.cerrar {
+	padding: 2rem;
 }

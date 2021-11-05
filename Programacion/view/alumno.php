@@ -3,6 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@ session_start();
         @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     </style>
 </head>
+
 <body>
     <header>
         <div class="nav">
@@ -47,6 +49,8 @@ session_start();
             </div>
         </div>
     </div>
+
     <script src="app2.js"></script>
 </body>
+
 </HTML>
