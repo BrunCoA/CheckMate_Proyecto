@@ -123,7 +123,7 @@ h2 {
 /* ELECCION DE REGISTRO */
 
 .register {
-	display: none;
+	display: auto;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	font-weight: 700;
@@ -176,8 +176,9 @@ h2 {
 
 /* REGISTRO ALUMNO */
 
+
 .formAlumno {
-	display: none;
+	display: auto;
 }
 
 .formAlumno .w-inp {
@@ -219,8 +220,8 @@ input[type="file"] {
 
 /* REGISTRO DOCENTE */
 
-.formDocente {
-	display: none;
+.formDocente{
+	display: auto;
 }
 
 .formDocente .w-inp {
@@ -262,15 +263,14 @@ input[type="file"] {
 	max-height: 10rem;
 }
 
-#checkboxes.hide {
-	display: none;
-}
-
 #checkboxes label {
 	text-align: justify;
 	float: right;
 	width: 100%;
 	font-size: 1rem;
+}
+#checkboxes.hide{
+	display: none;
 }
 
 #checkboxes input {
@@ -282,4 +282,7 @@ input[type="file"] {
 
 .cerrar {
 	padding: 2rem;
+}
+.hide {
+	display: none;
 }

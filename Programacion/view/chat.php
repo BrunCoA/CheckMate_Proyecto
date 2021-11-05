@@ -1,21 +1,15 @@
 <?php
 session_start();
-include "conexion.php";
-$sesion = $_SESSION['ci'];
-if ($sesion == null || $sesion = '') {
-    header("Location: Fpaginaprincipal.php");
-    die();
-}
-
-$sql = "SELECT * FROM `chat`";
-
-$query = mysqli_query($conexion, $sql);
+include "../model/conexion.php";
+$con=new Conexion;
+$sql = "SELECT * FROM sala_chat, mensaje";
+$query = $con->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="estiloschat.css">
+    <link rel="stylesheet" href="css/estiloschat.css">
     <title>ChatMate</title>
 </head>
 
@@ -38,19 +32,19 @@ $query = mysqli_query($conexion, $sql);
 
     <div class="container">
         <center>
-            <h2 style="color: white;">Bienvenid@ <span style="color: red;"><?php echo $_SESSION['ci']; ?> !</span></h2>
+            <h2 style="color: white;">BIENVENIDO/A <span style="color: red;"><?php echo $_SESSION['usuario']; ?> !</span></h2>
         </center></br>
         <center>
             <div class="display-chat" id="display-chat">
                 <?php
-                if (mysqli_num_rows($query) > 0) {
-                    while ($row = mysqli_fetch_assoc($query)) {
+                if ($query->columnCount() > 0) {
+                    while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
                 ?>
                         <div class="message">
                             <p>
 
                                 <b><span><?php echo $row['name']; ?>:</span></b>
-                                <span style="display: inline-block;"><?php echo $row['mensaje']; ?></span>
+                                <span style="display: inline-block;"><?php echo $row['msj']; ?></span>
                                 <span style="font-size: 10px; color: #949494"><?php echo $row['created_on']; ?></span>
                             </p>
                         </div>
@@ -87,7 +81,7 @@ $query = mysqli_query($conexion, $sql);
     </div>
     <center>
         <div class="cancelar">
-            <button onclick="location.href='Fappalumno.php'">Cancelar</button>
+            <button onclick="location.href='alumno.php'">Cancelar</button>
         </div>
     </center>
 </body>

@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(abstract-13-4k.jpg);
+    background-image: url(bgAlumno.svg);
     background-size: 100%;
 }
 
@@ -16,7 +16,7 @@ body {
     color: white;
 }
 
-.listadatos {
+.listaDatos {
     background-color: #12131B;
     margin: auto;
     width: 450px;
@@ -24,7 +24,7 @@ body {
     padding: 10px;
 }
 
-.listadatos img {
+.listaDatos img {
     margin: auto;
     width: 100px;
     height: 100px;

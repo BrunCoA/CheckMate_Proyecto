@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(abstract-13-4k.jpg);
+    background-image: url(bgAlumno.svg);
     background-size: 100%;
 }
 
@@ -95,7 +95,7 @@ li a:hover {
     text-align: center;
 }
 
-.verperfil button {
+.verPerfil button {
     padding: 14px 16px;
     background: none;
     border: 0px;
@@ -104,7 +104,7 @@ li a:hover {
     font-size: 20px;
 }
 
-.cerrarsesion button {
+.cerrarSesion button {
     padding: 14px 16px;
     background: none;
     border: 0px;
@@ -168,7 +168,7 @@ li a:hover {
     margin-top: 50px;
 }
 
-.hacerconsulta {
+.hacerConsulta {
     display: none;
 }
 

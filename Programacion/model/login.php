@@ -9,7 +9,6 @@ $passlogin=$_POST['passlogin'];
 $cons1 = "SELECT alumno.ci FROM usuario, alumno WHERE pass='$passlogin' and usuario.ci='$cilogin' and usuario.ci=alumno.ci;";
 $resultado1 = $db->query($cons1);
 $verificar1 = $resultado1->fetch();
-
 /* DOCENTE */
 $cons2 = "SELECT docente.ci FROM usuario, docente WHERE pass='$passlogin' and usuario.ci='$cilogin' and usuario.ci=docente.ci;";
 $resultado2 = $db->query($cons2);

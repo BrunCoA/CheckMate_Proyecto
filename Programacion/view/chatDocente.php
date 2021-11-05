@@ -1,12 +1,6 @@
 <?php
 session_start();
-include "conexion.php";
-$sesion = $_SESSION['ci'];
-if ($sesion == null || $sesion = '') {
-    header("Location: Fpaginaprincipal.php");
-    die();
-}
-
+include "../model/conexion.php";
 $sql = "SELECT * FROM `chat`";
 
 $query = mysqli_query($conexion, $sql);
@@ -15,7 +9,7 @@ $query = mysqli_query($conexion, $sql);
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../Alumno/estiloschat.css">
+    <link rel="stylesheet" href="css/estiloschat.css">
     <title>ChatMate</title>
 </head>
 
@@ -87,7 +81,7 @@ $query = mysqli_query($conexion, $sql);
     </div>
     <center>
         <div class="cancelar">
-            <button onclick="location.href='Fappdocente.php'">Cancelar</button>
+            <button onclick="location.href='docente.php'">Cancelar</button>
         </div>
     </center>
 </body>

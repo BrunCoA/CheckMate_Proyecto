@@ -1,10 +1,5 @@
 <?php
-session_start();
-if (!isset($_SESSION['ci'])) {
-	header("Location: Fpaginaprincipal.php");
-}
-include "conexion.php";
-
+include "../model/conexion.php";
 $ci = $_SESSION['ci'];
 $sql = "SELECT * FROM `usuario` where ci = '".$ci."'";
 $query =  mysqli_query($conexion, $sql);
@@ -13,13 +8,13 @@ $query =  mysqli_query($conexion, $sql);
 <html lang="es">
 
 <head>
-	<link rel="stylesheet" href="styles2.css">
+	<link rel="stylesheet" href="css/styles2.css">
 	<TITLE>Perfil</TITLE>
 </head>
 
 <BODY>
 	<div class="all">
-		<div class="listadatos">
+		<div class="listaDatos">
 			<div class="titulo">
 				<h2>Perfil de alumno</h2>
 			</div>
@@ -44,8 +39,8 @@ $query =  mysqli_query($conexion, $sql);
 	}
 ?>  
 			<div class="botones">
-				<div><button onclick="location.href='Fmodificarperfilalumno.php'">Modificar perfil</button></div>
-				<div style="padding: 25px;"><button onclick="location.href='Fappalumno.php'">Volver</button></div>
+				<div><button onclick="location.href='modificarPerfil.php'">Modificar perfil</button></div>
+				<div style="padding: 25px;"><button onclick="location.href='alumno.php'">Volver</button></div>
 			</div>
 		</div>
 

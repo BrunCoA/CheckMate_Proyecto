@@ -1,11 +1,4 @@
-<?php
-session_start();
-$sesion=$_SESSION['ci'];
-if($sesion == null || $sesion =''){
-    header("Location: Fpaginaprincipal.php");
-    die();
-}
-?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,7 +6,7 @@ if($sesion == null || $sesion =''){
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     </style>
-    <link rel="stylesheet" href="estilos2.css">
+    <link rel="stylesheet" href="css/estilos2.css">
     <TITLE>Aplicacion de Alumno</TITLE>
 </head>
 
@@ -25,7 +18,7 @@ if($sesion == null || $sesion =''){
                 <div class="asignatura">Asignatura 2 - Hora inicio 2 - Hora fin 2</div>
                 <div class="asignatura">Asignatura 3 - Hora inicio 3 - Hora fin 3</div>
                 <div class="asignatura">Asignatura 4 - Hora inicio 4 - Hora fin 4</div>
-                <button onclick="location.href='Fappalumno.php'">Cerrar</button>
+                <button onclick="location.href='alumno.php'">Cerrar</button>
             </div>
 
         </div>

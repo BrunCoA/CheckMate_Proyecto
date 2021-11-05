@@ -1,5 +1,5 @@
 <?php
-    include "conexion.php";
+    include "../model/conexion.php";
     $sql = "SELECT * FROM `chat`";
     $query = mysqli_query($conexion, $sql);
 ?>
@@ -7,7 +7,7 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="css/styles3.css">
     <TITLE>Modificacion de perfil</TITLE>
 </head>
 

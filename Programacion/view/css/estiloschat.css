@@ -6,8 +6,9 @@
 }
 
 body {
-    background-image: url(fondochat.jpg);
+    background-image: url(bgAlumno.svg);
     background-size: 100%;
+    background: #333;
 }
 
 p {
@@ -15,9 +16,9 @@ p {
 }
 
 .display-chat {
-    background-color: white;
+    background-color: #ddd;
     border: 5px solid #ccc!important;
-    border-color: #000!important;
+    border-color: #555!important;
     width: 700px;
     height: 400px;
     overflow-y: auto;
@@ -40,6 +41,7 @@ p {
 
 .form {
     display: inline-flex;
+    background: black;
 }
 
 .form textarea {
@@ -57,7 +59,7 @@ p {
 
 .message {
     padding: 5px;
-    background-color: #FCFF9B;
+    background-color: #9bbbff;
     border: 1px solid #FCFF9B;
     border-radius: 16px;
     width: 100%;

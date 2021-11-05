@@ -5,12 +5,24 @@
     font-family: 'Azeret Mono', monospace;
     text-decoration: none;
 }
-
-body {
-    background-image: url(abstract-13-4k.jpg);
-    background-size: 100%;
+body, html {
+    width: 100%;
+	height: 100%;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	background: url(bgAlumno.svg);
+	background-repeat: no-repeat;
+    background-size: 150%;
+	background-attachment: fixed;
+}
+.container-all {
+    width: 100%;
+    height: 100%;
+}
 .nav {
     width: 100%;
 }
@@ -21,32 +33,21 @@ li {
 
 .nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #163C4F;
-    height: 45px;
+    padding: 0;
+    margin: 0;
+    background-color: #0d394e;
+    height: 3rem;
 }
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1rem 1rem ;
     text-decoration: none;
 }
 
-.agenda a {
-    font-size: 12px;
-}
-
-.consulta a {
-    font-size: 12px;
-}
-
-.salachat a {
-    font-size: 12px;
-}
 
 li a:hover {
     background-color: #111;
@@ -63,7 +64,7 @@ li a:hover {
     font-family: 'Righteous';
 }
 
-.fotodeperfil button {
+.fotoPerfil button {
     background-size: 35px 35px;
     border: 0;
     border-radius: 50%;
@@ -72,7 +73,7 @@ li a:hover {
     z-index: 0;
     margin-left: 540px;
     padding: 10px 16px;
-    background-image: url("imagenperfil.png");
+    background-image: url("perfil.svg");
     cursor: pointer;
     margin-top: 7px;
 }
@@ -94,7 +95,7 @@ li a:hover {
     text-align: center;
 }
 
-.verperfil button {
+.verPerfil button {
     padding: 14px 16px;
     background: none;
     border: 0px;
@@ -103,7 +104,7 @@ li a:hover {
     font-size: 20px;
 }
 
-.cerrarsesion button {
+.cerrarSesion button {
     padding: 14px 16px;
     background: none;
     border: 0px;
@@ -167,7 +168,7 @@ li a:hover {
     margin-top: 50px;
 }
 
-.hacerconsulta {
+.hacerConsulta {
     display: none;
 }
 
@@ -196,4 +197,11 @@ li a:hover {
 .ctn-consulta label {
     color: white;
     text-align: center;
+}
+
+.chat {
+    width: 400px;
+    height: 400px;
+    border: 2px;
+    background-color: grey;
 }

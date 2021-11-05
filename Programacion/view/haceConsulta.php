@@ -1,10 +1,5 @@
 <?php
 session_start();
-$sesion=$_SESSION['ci'];
-if($sesion == null || $sesion =''){
-    header("Location: Fpaginaprincipal.php");
-    die();
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +8,7 @@ if($sesion == null || $sesion =''){
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     </style>
-    <link rel="stylesheet" href="estilos2.css">
+    <link rel="stylesheet" href="css/estilos2.css">
     <title>Aplicacion de Alumno</title>
 </head>
 
