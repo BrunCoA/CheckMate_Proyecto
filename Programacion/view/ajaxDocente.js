@@ -52,7 +52,7 @@ $(function () {
     $(this).on('click', '.update', function () {
         let cedula = $(this).attr("id");
         $.ajax({
-            url: "../controller/cargar_persona.php",
+            url: "../controller/cargarDatos.php",
             method: "POST",
             data: {
                 cedula: cedula

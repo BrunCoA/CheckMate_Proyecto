@@ -28,6 +28,7 @@
 						<th>Primer Apellido</th>
 						<th>Segundo Apellido</th>
 						<th>Contraseña</th>
+						<th>Grupo</th>
 						<th>Editar</th>
 						<th>Eliminar</th>
 					</tr>
@@ -64,6 +65,10 @@
 					<label>Segundo Apellido</label>
 					<input type="text" name="txt_segundo_apellido" id="txt_segundo_apellido" class="form-control" />
 					<br />
+
+					<label>Grupo</label>
+					<input type="text" name="txt_grupo" id="txt_grupo" class="form-control" />
+					<br />					
 
 					<label>Contraseña</label>
 					<input type="text" name="txt_pass" id="txt_pass" class="form-control" />

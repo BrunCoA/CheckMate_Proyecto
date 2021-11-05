@@ -13,6 +13,7 @@ try {
 		$sub_array[] = $row["p_ape"];
 		$sub_array[] = $row["s_ape"];
 		$sub_array[] = $row["pass"];
+		$sub_array[] = $row["nom_gr"];
 		$sub_array[] = '<button type="button" name="update" id="' . $row["ci"] . '" class="btn btn-warning btn-xs update">Modificar</button>';
 		$sub_array[] = '<button type="button" name="delete" id="' . $row["ci"] . '" class="btn btn-danger btn-xs delete">Eliminar</button>';
 		$datos[] = $sub_array;

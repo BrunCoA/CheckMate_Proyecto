@@ -28,8 +28,9 @@ class Listados_Model extends Conexion
         $resultado = null;
         try {
             $con = new Conexion();
-            $consulta = "SELECT usuario.ci, p_nom, s_nom, 
-            p_ape, s_ape, pass FROM usuario, alumno WHERE usuario.ci=alumno.ci";
+            $consulta = "SELECT usuario.ci, p_nom, s_nom, p_ape, s_ape, pass, grupo.nom_gr 
+                        FROM usuario, alumno, grupo, alumno_ingresa_grupo 
+                        WHERE usuario.ci=alumno.ci AND alumno.ci=alumno_ingresa_grupo.ci AND alumno_ingresa_grupo.id_gr=grupo.id_gr";
             $resultado = $con->query($consulta)->fetchAll(PDO::FETCH_ASSOC);
         } catch (Exception $e) {
             throw new Exception($e->getMessage());

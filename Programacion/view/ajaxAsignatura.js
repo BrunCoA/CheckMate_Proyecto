@@ -41,14 +41,14 @@ $(function () {
                 }
             });
         } else {
-            alert("Los campos Cedula, Primer Nombre, Primer Apellido y Contraseña son requeridos");
+            alert("El campos Cedula, Primer Nombre, Primer Apellido y Contraseña son requeridos");
         }
     });
 
     $(this).on('click', '.update', function () {
         let cedula = $(this).attr("id");
         $.ajax({
-            url: "../controller/cargar_persona.php",
+            url: "../controller/cargarDatos.php",
             method: "POST",
             data: {
                 cedula: cedula

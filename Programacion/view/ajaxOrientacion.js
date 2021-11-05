@@ -48,7 +48,7 @@ $(function () {
     $(this).on('click', '.update', function () {
         let cedula = $(this).attr("ci");
         $.ajax({
-            url: "../controller/cargar_persona.php",
+            url: "../controller/cargarDatos.php",
             method: "POST",
             data: {
                 cedula: cedula
@@ -93,7 +93,7 @@ $(function () {
 function onClickBotonAgregar() {
 
     $('#frm_abml')[0].reset();
-    $('.modal-title').text("Agregar Persona");
+    $('.modal-title').text("Agregar Orientacion");
     $('#accion').val("Agregar");
     $('#operacion').val("Agregar");
 }

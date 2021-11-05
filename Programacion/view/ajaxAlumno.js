@@ -52,7 +52,7 @@ $(function () {
     $(this).on('click', '.update', function () {
         let cedula = $(this).attr("ci");
         $.ajax({
-            url: "../controller/cargar_persona.php",
+            url: "../controller/cargarDatos.php",
             method: "POST",
             data: {
                 cedula: cedula
@@ -67,7 +67,7 @@ $(function () {
                 $('#txt_primer_apellido').val(data.primer_apellido);
                 $('#txt_segundo_apellido').val(data.segundo_apellido);
 
-                $('.modal-title').text("Editar Persona");
+                $('.modal-title').text("Editar Alumno");
                 $('#h_cedula').val(cedula);
                 $('#accion').val("Editar");
                 $('#h_operacion').val("Editar");
@@ -97,7 +97,7 @@ $(function () {
 function onClickBotonAgregar() {
 
     $('#frm_abml')[0].reset();
-    $('.modal-title').text("Agregar Persona");
+    $('.modal-title').text("Agregar Alumno");
     $('#accion').val("Agregar");
     $('#operacion').val("Agregar");
 }
